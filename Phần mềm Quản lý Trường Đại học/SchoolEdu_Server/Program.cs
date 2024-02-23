@@ -10,7 +10,9 @@ namespace SchoolEdu_Server
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World");
+            Console.WriteLine("Server SchoolEdu - Phan mem Quan ly Truong Dai hoc.");
+            Console.WriteLine("===================================================");
+            Console.WriteLine("Dang khoi dong dich vu...");
             Console.ReadLine();
         }
     }
