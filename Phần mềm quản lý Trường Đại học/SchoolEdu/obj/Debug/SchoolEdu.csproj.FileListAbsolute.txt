@@ -1,9 +1,0 @@
-C:\Users\lesyt\OneDrive - Thanglele\DATA-LEARNING\C#\Phần mềm quản lý Trường Đại học\SchoolEdu\bin\Debug\SchoolEdu.exe.config
-C:\Users\lesyt\OneDrive - Thanglele\DATA-LEARNING\C#\Phần mềm quản lý Trường Đại học\SchoolEdu\bin\Debug\SchoolEdu.exe
-C:\Users\lesyt\OneDrive - Thanglele\DATA-LEARNING\C#\Phần mềm quản lý Trường Đại học\SchoolEdu\bin\Debug\SchoolEdu.pdb
-C:\Users\lesyt\OneDrive - Thanglele\DATA-LEARNING\C#\Phần mềm quản lý Trường Đại học\SchoolEdu\obj\Debug\SchoolEdu.csproj.AssemblyReference.cache
-C:\Users\lesyt\OneDrive - Thanglele\DATA-LEARNING\C#\Phần mềm quản lý Trường Đại học\SchoolEdu\obj\Debug\SchoolEdu.Properties.Resources.resources
-C:\Users\lesyt\OneDrive - Thanglele\DATA-LEARNING\C#\Phần mềm quản lý Trường Đại học\SchoolEdu\obj\Debug\SchoolEdu.csproj.GenerateResource.cache
-C:\Users\lesyt\OneDrive - Thanglele\DATA-LEARNING\C#\Phần mềm quản lý Trường Đại học\SchoolEdu\obj\Debug\SchoolEdu.csproj.CoreCompileInputs.cache
-C:\Users\lesyt\OneDrive - Thanglele\DATA-LEARNING\C#\Phần mềm quản lý Trường Đại học\SchoolEdu\obj\Debug\SchoolEdu.exe
-C:\Users\lesyt\OneDrive - Thanglele\DATA-LEARNING\C#\Phần mềm quản lý Trường Đại học\SchoolEdu\obj\Debug\SchoolEdu.pdb
