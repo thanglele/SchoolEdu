@@ -13,7 +13,7 @@ namespace SchoolEdu_Server
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Server SchoolEdu - Phan mem Quan ly Truong Dai hoc.");
+            Console.WriteLine("Server SchoolEdu - Phan mem Quan ly Truong Dai hochjfhjfjf.");
             Console.WriteLine("===================================================");
             Console.WriteLine("Dang khoi dong dich vu..");
             Console.ReadLine();
