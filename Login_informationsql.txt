@@ -1,0 +1,13 @@
+ip: 172.188.28.154
+
+Lê Lương
+lethanhluong-database
+Leth@nhluongsql2024
+
+Tạ Ngát
+tathihongngat-database
+T@thihongngatsql2024
+
+Bùi Đức
+buimanhduc-database
+Buim@nhducsql2024
