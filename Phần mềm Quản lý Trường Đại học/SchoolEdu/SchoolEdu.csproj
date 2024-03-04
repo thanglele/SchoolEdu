@@ -150,17 +150,11 @@
     <Compile Include="Login_Form.Designer.cs">
       <DependentUpon>Login_Form.cs</DependentUpon>
     </Compile>
-    <Compile Include="MainForm_Daotao.cs">
+    <Compile Include="MainForm_Admin.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="MainForm_Daotao.Designer.cs">
-      <DependentUpon>MainForm_Daotao.cs</DependentUpon>
-    </Compile>
-    <Compile Include="MainForm_Khaothi.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="MainForm_Khaothi.Designer.cs">
-      <DependentUpon>MainForm_Khaothi.cs</DependentUpon>
+    <Compile Include="MainForm_Admin.Designer.cs">
+      <DependentUpon>MainForm_Admin.cs</DependentUpon>
     </Compile>
     <Compile Include="MainForm_Student.cs">
       <SubType>Form</SubType>
