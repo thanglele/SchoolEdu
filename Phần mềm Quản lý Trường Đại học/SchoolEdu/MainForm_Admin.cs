@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace SchoolEdu
 {
-    public partial class MainForm_Daotao : Form
+    public partial class MainForm_Admin : Form
     {
-        public MainForm_Daotao()
+        public MainForm_Admin()
         {
             InitializeComponent();
         }

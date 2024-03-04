@@ -1,6 +1,6 @@
 ﻿namespace SchoolEdu
 {
-    partial class MainForm_Daotao
+    partial class MainForm_Admin
     {
         /// <summary>
         /// Required designer variable.
@@ -31,7 +31,7 @@
             this.components = new System.ComponentModel.Container();
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "MainForm_Daotao";
+            this.Text = "MainForm_Admin";
         }
 
         #endregion
