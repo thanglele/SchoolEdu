@@ -172,8 +172,17 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Thongtinsinhvien.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Thongtinsinhvien.Designer.cs">
+      <DependentUpon>Thongtinsinhvien.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Login_Form.resx">
       <DependentUpon>Login_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm_Student.resx">
+      <DependentUpon>MainForm_Student.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -184,6 +193,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Thongtinsinhvien.resx">
+      <DependentUpon>Thongtinsinhvien.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
