@@ -33,7 +33,6 @@
             this.logout = new System.Windows.Forms.Button();
             this.sinhToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.thôngTinSinhViênToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.đăngKýHọcToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.đăngKýHọcToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.traCứuHọcPhíToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -83,17 +82,13 @@
             this.toolStripMenuItem1.Text = "Thông tin sinh viên";
             this.toolStripMenuItem1.Click += new System.EventHandler(this.ttsv_click);
             // 
-            // thôngTinSinhViênToolStripMenuItem
-            // 
-            this.thôngTinSinhViênToolStripMenuItem.Name = "thôngTinSinhViênToolStripMenuItem";
-            this.thôngTinSinhViênToolStripMenuItem.Size = new System.Drawing.Size(12, 25);
-            // 
             // đăngKýHọcToolStripMenuItem
             // 
             this.đăngKýHọcToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.đăngKýHọcToolStripMenuItem.Name = "đăngKýHọcToolStripMenuItem";
             this.đăngKýHọcToolStripMenuItem.Size = new System.Drawing.Size(144, 25);
             this.đăngKýHọcToolStripMenuItem.Text = "Thông tin lớp học";
+            this.đăngKýHọcToolStripMenuItem.Click += new System.EventHandler(this.ttlh_click);
             // 
             // đăngKýHọcToolStripMenuItem1
             // 
@@ -116,7 +111,6 @@
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.sinhToolStripMenuItem,
             this.toolStripMenuItem1,
-            this.thôngTinSinhViênToolStripMenuItem,
             this.đăngKýHọcToolStripMenuItem,
             this.đăngKýHọcToolStripMenuItem1,
             this.traCứuHọcPhíToolStripMenuItem,
@@ -195,7 +189,6 @@
         private sinhvien sinhvien2;
         private System.Windows.Forms.ToolStripMenuItem sinhToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem1;
-        private System.Windows.Forms.ToolStripMenuItem thôngTinSinhViênToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem đăngKýHọcToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem đăngKýHọcToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem traCứuHọcPhíToolStripMenuItem;

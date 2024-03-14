@@ -27,8 +27,8 @@ namespace SchoolEdu
         {
             get
             {
-                if (_sv == null) 
-                {  
+                if (_sv == null)
+                {
                     _sv = new sinhvien();
                 }
                 return _sv;

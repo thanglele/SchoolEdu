@@ -45,5 +45,14 @@ namespace SchoolEdu
                 sinhvien.sv.BringToFront();
             }
         }
+
+        private void ttlh_click(object sender, EventArgs e)
+        {
+            if (!panel1.Controls.Contains(Thongtinlophoc.ttlh))
+            {
+                panel1.Controls.Add(Thongtinlophoc.ttlh);
+                Thongtinlophoc.ttlh.BringToFront();
+            }
+        }
     }
 }

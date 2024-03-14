@@ -17,7 +17,7 @@ namespace SchoolEdu
         {
             InitializeComponent();
         }
-        string ketnoi = "Data Source=172.188.28.154;Initial Catalog=SchoolEdu_Database;Persist Security Info=True;User ID=buimanhduc-database;Password=***********;Encrypt=True;";
+        string ketnoi = "Data Source=172.188.28.154;Initial Catalog=SchoolEdu_Database;Persist Security Info=True;User ID=buimanhduc-database;Password=Buim@nhducsql2024;Encrypt=True;";
         SqlConnection conn = null;
 
         private void thoat_click(object sender, EventArgs e)

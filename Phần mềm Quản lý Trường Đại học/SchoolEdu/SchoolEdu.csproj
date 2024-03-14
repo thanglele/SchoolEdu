@@ -172,11 +172,27 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SchoolEdu_DatabaseDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SchoolEdu_DatabaseDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="SchoolEdu_DatabaseDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SchoolEdu_DatabaseDataSet1.xsd</DependentUpon>
+    </Compile>
     <Compile Include="sinhvien.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="sinhvien.Designer.cs">
       <DependentUpon>sinhvien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Thongtinlophoc.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Thongtinlophoc.Designer.cs">
+      <DependentUpon>Thongtinlophoc.cs</DependentUpon>
     </Compile>
     <Compile Include="Thongtinsinhvien.cs">
       <SubType>UserControl</SubType>
@@ -202,6 +218,9 @@
     <EmbeddedResource Include="sinhvien.resx">
       <DependentUpon>sinhvien.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Thongtinlophoc.resx">
+      <DependentUpon>Thongtinlophoc.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Thongtinsinhvien.resx">
       <DependentUpon>Thongtinsinhvien.cs</DependentUpon>
     </EmbeddedResource>
@@ -215,6 +234,28 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <None Include="SchoolEdu_DatabaseDataSet.xsc">
+      <DependentUpon>SchoolEdu_DatabaseDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="SchoolEdu_DatabaseDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SchoolEdu_DatabaseDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="SchoolEdu_DatabaseDataSet.xss">
+      <DependentUpon>SchoolEdu_DatabaseDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="SchoolEdu_DatabaseDataSet1.xsc">
+      <DependentUpon>SchoolEdu_DatabaseDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="SchoolEdu_DatabaseDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SchoolEdu_DatabaseDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="SchoolEdu_DatabaseDataSet1.xss">
+      <DependentUpon>SchoolEdu_DatabaseDataSet1.xsd</DependentUpon>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
