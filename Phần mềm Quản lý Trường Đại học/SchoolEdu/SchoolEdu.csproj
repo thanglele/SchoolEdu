@@ -172,6 +172,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="sinhvien.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="sinhvien.Designer.cs">
+      <DependentUpon>sinhvien.cs</DependentUpon>
+    </Compile>
     <Compile Include="Thongtinsinhvien.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -193,6 +199,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="sinhvien.resx">
+      <DependentUpon>sinhvien.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Thongtinsinhvien.resx">
       <DependentUpon>Thongtinsinhvien.cs</DependentUpon>
     </EmbeddedResource>

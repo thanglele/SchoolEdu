@@ -19,9 +19,10 @@ namespace SchoolEdu
         }
         string ketnoi = "Data Source=172.188.28.154;Initial Catalog=SchoolEdu_Database;Persist Security Info=True;User ID=buimanhduc-database;Password=***********;Encrypt=True;";
         SqlConnection conn = null;
+
         private void thoat_click(object sender, EventArgs e)
         {
-            Close();
+            Application.Exit();
         }
 
         private void checkBox1_CheckedChanged(object sender, EventArgs e)

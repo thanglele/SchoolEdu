@@ -20,11 +20,30 @@ namespace SchoolEdu
         private void logout_click(object sender, EventArgs e)
         {
             login.Show();
+            Close();
         }
 
         private void student_closing(object sender, FormClosingEventArgs e)
         {
             login.Show();
+        }
+
+        private void ttsv_click(object sender, EventArgs e)
+        {
+            if (!panel1.Controls.Contains(Thongtinsinhvien.TTSV))
+            {
+                panel1.Controls.Add(Thongtinsinhvien.TTSV);
+                Thongtinsinhvien.TTSV.BringToFront();
+            }
+        }
+
+        private void sinhvien_click(object sender, EventArgs e)
+        {
+            if (!panel1.Controls.Contains(sinhvien.sv))
+            {
+                panel1.Controls.Add(sinhvien.sv);
+                sinhvien.sv.BringToFront();
+            }
         }
     }
 }

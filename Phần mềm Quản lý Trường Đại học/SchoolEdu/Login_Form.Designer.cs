@@ -61,9 +61,9 @@
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.label2.Location = new System.Drawing.Point(9, 159);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(340, 41);
+            this.label2.Size = new System.Drawing.Size(329, 41);
             this.label2.TabIndex = 2;
-            this.label2.Text = "Quản lý sinh viên";
+            this.label2.Text = "Đại Học Thủy Lợi";
             // 
             // label3
             // 
@@ -82,7 +82,7 @@
             this.matkhau.Name = "matkhau";
             this.matkhau.PasswordChar = '*';
             this.matkhau.Size = new System.Drawing.Size(185, 31);
-            this.matkhau.TabIndex = 4;
+            this.matkhau.TabIndex = 5;
             // 
             // dangnhap
             // 
@@ -90,15 +90,15 @@
             this.dangnhap.Location = new System.Drawing.Point(156, 241);
             this.dangnhap.Name = "dangnhap";
             this.dangnhap.Size = new System.Drawing.Size(185, 31);
-            this.dangnhap.TabIndex = 5;
+            this.dangnhap.TabIndex = 4;
             // 
             // panel1
             // 
             this.panel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel1.BackgroundImage")));
             this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panel1.Location = new System.Drawing.Point(12, 12);
+            this.panel1.Location = new System.Drawing.Point(6, 12);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(805, 611);
+            this.panel1.Size = new System.Drawing.Size(811, 611);
             this.panel1.TabIndex = 6;
             // 
             // panel2
