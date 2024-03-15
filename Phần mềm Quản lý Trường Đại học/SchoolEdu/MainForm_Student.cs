@@ -23,18 +23,11 @@ namespace SchoolEdu
             Close();
         }
 
-        private void student_closing(object sender, FormClosingEventArgs e)
-        {
-            login.Show();
-        }
-
         private void ttsv_click(object sender, EventArgs e)
         {
-            if (!panel1.Controls.Contains(Thongtinsinhvien.TTSV))
-            {
-                panel1.Controls.Add(Thongtinsinhvien.TTSV);
-                Thongtinsinhvien.TTSV.BringToFront();
-            }
+            Thongtinsinhvien ttsv = new Thongtinsinhvien();
+            panel1.Controls.Add(ttsv);
+            ttsv.BringToFront();
         }
 
         private void sinhvien_click(object sender, EventArgs e)
@@ -48,11 +41,16 @@ namespace SchoolEdu
 
         private void ttlh_click(object sender, EventArgs e)
         {
-            if (!panel1.Controls.Contains(Thongtinlophoc.ttlh))
-            {
-                panel1.Controls.Add(Thongtinlophoc.ttlh);
-                Thongtinlophoc.ttlh.BringToFront();
-            }
+            Thongtinlophoc ttlh = new Thongtinlophoc(); 
+            panel1.Controls.Add(ttlh);
+            ttlh.BringToFront();
+        }
+
+        private void dky_click(object sender, EventArgs e)
+        {
+            dangkyhoc dky = new dangkyhoc();
+            panel1.Controls.Add(dky);   
+            dky.BringToFront();
         }
     }
 }

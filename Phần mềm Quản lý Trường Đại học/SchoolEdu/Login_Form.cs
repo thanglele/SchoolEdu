@@ -7,6 +7,7 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Web;
 using System.Windows.Forms;
 
 namespace SchoolEdu
@@ -17,11 +18,10 @@ namespace SchoolEdu
         {
             InitializeComponent();
         }
-        string ketnoi = "Data Source=172.188.28.154;Initial Catalog=SchoolEdu_Database;Persist Security Info=True;User ID=buimanhduc-database;Password=Buim@nhducsql2024;Encrypt=True;";
-        SqlConnection conn = null;
-
+        private bool isExiting = false;
         private void thoat_click(object sender, EventArgs e)
         {
+            isExiting = true;
             Application.Exit();
         }
 
@@ -37,19 +37,56 @@ namespace SchoolEdu
             }
         }
 
+        bool login(string username, string password)
+        {
+            return Account.Instance.login(username, password);
+        }
         private void button1_Click(object sender, EventArgs e)
         {
-            MainForm_Student student = new MainForm_Student();
-            this.Hide();
-            student.ShowDialog();
+            string username = dangnhap.Text;
+            string password = matkhau.Text;
+            if (login( username, password))
+            {
+                string status = comboBox1.SelectedItem.ToString();
+                if (status == "Sinh Viên")
+                {
+                    MainForm_Student student = new MainForm_Student();
+                    this.Hide();
+                    student.ShowDialog();
+                }
+                else if (status == "Giảng Viên")
+                {
+                    MainForm_Teacher mainForm_Teacher = new MainForm_Teacher();
+                    this.Hide();
+                    mainForm_Teacher.ShowDialog();
+                }
+                else if (status == "Admin")
+                {
+                    MainForm_Admin admin = new MainForm_Admin();
+                    this.Hide();
+                    admin.ShowDialog();
+                }
+            }
+            else
+            {
+                MessageBox.Show("Sai tên tài khoản hoặc mật khẩu!", "Thông Báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
 
         private void login_closing(object sender, FormClosingEventArgs e)
         {
-            if(MessageBox.Show("Bạn có thật sự muốn thoát chương trình?", "Thông báo", MessageBoxButtons.OKCancel) == DialogResult.Cancel)
+            if (!isExiting)
             {
-                e.Cancel = true;
+                DialogResult r = MessageBox.Show("Bạn có thật sự muốn thoát chương trình?", "Thông báo", MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
+                if (r == DialogResult.Cancel)
+                {
+                    e.Cancel = true;
+                }
             }
+        }
+        private void login_combobox(object sender, EventArgs e)
+        {
+
         }
     }
 }

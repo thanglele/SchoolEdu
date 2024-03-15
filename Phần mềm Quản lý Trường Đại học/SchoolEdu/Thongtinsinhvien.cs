@@ -23,17 +23,6 @@ namespace SchoolEdu
             panel1.BackColor = Color.FromArgb(100,0,0,0);
             panel2.BackColor = Color.FromArgb(100, 0, 0, 0);
         }
-        private static Thongtinsinhvien _TTSV;
-        public static Thongtinsinhvien TTSV
-        {
-            get
-            {
-                if (_TTSV == null)
-                {
-                    _TTSV = new Thongtinsinhvien();
-                }
-                return _TTSV;
-            }
-        }
+        
     }
 }

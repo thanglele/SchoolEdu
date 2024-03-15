@@ -30,6 +30,9 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm_Student));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.sinhvien2 = new SchoolEdu.sinhvien();
+            this.sinhvien1 = new SchoolEdu.sinhvien();
+            this.thongtinsinhvien1 = new SchoolEdu.Thongtinsinhvien();
             this.logout = new System.Windows.Forms.Button();
             this.sinhToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
@@ -38,9 +41,6 @@
             this.traCứuHọcPhíToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.tổngGpaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.sinhvien2 = new SchoolEdu.sinhvien();
-            this.sinhvien1 = new SchoolEdu.sinhvien();
-            this.thongtinsinhvien1 = new SchoolEdu.Thongtinsinhvien();
             this.panel1.SuspendLayout();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -54,6 +54,36 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(817, 370);
             this.panel1.TabIndex = 2;
+            // 
+            // sinhvien2
+            // 
+            this.sinhvien2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("sinhvien2.BackgroundImage")));
+            this.sinhvien2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.sinhvien2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.sinhvien2.Location = new System.Drawing.Point(0, 0);
+            this.sinhvien2.Name = "sinhvien2";
+            this.sinhvien2.Size = new System.Drawing.Size(817, 370);
+            this.sinhvien2.TabIndex = 2;
+            // 
+            // sinhvien1
+            // 
+            this.sinhvien1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("sinhvien1.BackgroundImage")));
+            this.sinhvien1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.sinhvien1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.sinhvien1.Location = new System.Drawing.Point(0, 0);
+            this.sinhvien1.Name = "sinhvien1";
+            this.sinhvien1.Size = new System.Drawing.Size(817, 370);
+            this.sinhvien1.TabIndex = 1;
+            // 
+            // thongtinsinhvien1
+            // 
+            this.thongtinsinhvien1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("thongtinsinhvien1.BackgroundImage")));
+            this.thongtinsinhvien1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.thongtinsinhvien1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.thongtinsinhvien1.Location = new System.Drawing.Point(0, 0);
+            this.thongtinsinhvien1.Name = "thongtinsinhvien1";
+            this.thongtinsinhvien1.Size = new System.Drawing.Size(817, 370);
+            this.thongtinsinhvien1.TabIndex = 0;
             // 
             // logout
             // 
@@ -96,6 +126,7 @@
             this.đăngKýHọcToolStripMenuItem1.Name = "đăngKýHọcToolStripMenuItem1";
             this.đăngKýHọcToolStripMenuItem1.Size = new System.Drawing.Size(108, 25);
             this.đăngKýHọcToolStripMenuItem1.Text = "Đăng ký học";
+            this.đăngKýHọcToolStripMenuItem1.Click += new System.EventHandler(this.dky_click);
             // 
             // traCứuHọcPhíToolStripMenuItem
             // 
@@ -125,38 +156,8 @@
             // 
             this.tổngGpaToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tổngGpaToolStripMenuItem.Name = "tổngGpaToolStripMenuItem";
-            this.tổngGpaToolStripMenuItem.Size = new System.Drawing.Size(89, 25);
-            this.tổngGpaToolStripMenuItem.Text = "Tổng Gpa";
-            // 
-            // sinhvien2
-            // 
-            this.sinhvien2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("sinhvien2.BackgroundImage")));
-            this.sinhvien2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.sinhvien2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.sinhvien2.Location = new System.Drawing.Point(0, 0);
-            this.sinhvien2.Name = "sinhvien2";
-            this.sinhvien2.Size = new System.Drawing.Size(817, 370);
-            this.sinhvien2.TabIndex = 2;
-            // 
-            // sinhvien1
-            // 
-            this.sinhvien1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("sinhvien1.BackgroundImage")));
-            this.sinhvien1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.sinhvien1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.sinhvien1.Location = new System.Drawing.Point(0, 0);
-            this.sinhvien1.Name = "sinhvien1";
-            this.sinhvien1.Size = new System.Drawing.Size(817, 370);
-            this.sinhvien1.TabIndex = 1;
-            // 
-            // thongtinsinhvien1
-            // 
-            this.thongtinsinhvien1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("thongtinsinhvien1.BackgroundImage")));
-            this.thongtinsinhvien1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.thongtinsinhvien1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.thongtinsinhvien1.Location = new System.Drawing.Point(0, 0);
-            this.thongtinsinhvien1.Name = "thongtinsinhvien1";
-            this.thongtinsinhvien1.Size = new System.Drawing.Size(817, 370);
-            this.thongtinsinhvien1.TabIndex = 0;
+            this.tổngGpaToolStripMenuItem.Size = new System.Drawing.Size(90, 25);
+            this.tổngGpaToolStripMenuItem.Text = "Tổng GPA";
             // 
             // MainForm_Student
             // 
@@ -172,7 +173,6 @@
             this.Name = "MainForm_Student";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "MainForm_Student";
-            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.student_closing);
             this.panel1.ResumeLayout(false);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();

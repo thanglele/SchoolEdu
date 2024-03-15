@@ -146,6 +146,13 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Account.cs" />
+    <Compile Include="dangkyhoc.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="dangkyhoc.Designer.cs">
+      <DependentUpon>dangkyhoc.cs</DependentUpon>
+    </Compile>
     <Compile Include="Login_Form.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -182,6 +189,16 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>SchoolEdu_DatabaseDataSet1.xsd</DependentUpon>
     </Compile>
+    <Compile Include="SchoolEdu_DatabaseDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SchoolEdu_DatabaseDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="SchoolEdu_DatabaseDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SchoolEdu_DatabaseDataSet3.xsd</DependentUpon>
+    </Compile>
     <Compile Include="sinhvien.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -200,6 +217,9 @@
     <Compile Include="Thongtinsinhvien.Designer.cs">
       <DependentUpon>Thongtinsinhvien.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="dangkyhoc.resx">
+      <DependentUpon>dangkyhoc.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Login_Form.resx">
       <DependentUpon>Login_Form.cs</DependentUpon>
     </EmbeddedResource>
@@ -255,6 +275,28 @@
     </None>
     <None Include="SchoolEdu_DatabaseDataSet1.xss">
       <DependentUpon>SchoolEdu_DatabaseDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="SchoolEdu_DatabaseDataSet2.xsc">
+      <DependentUpon>SchoolEdu_DatabaseDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="SchoolEdu_DatabaseDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SchoolEdu_DatabaseDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="SchoolEdu_DatabaseDataSet2.xss">
+      <DependentUpon>SchoolEdu_DatabaseDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="SchoolEdu_DatabaseDataSet3.xsc">
+      <DependentUpon>SchoolEdu_DatabaseDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="SchoolEdu_DatabaseDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SchoolEdu_DatabaseDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="SchoolEdu_DatabaseDataSet3.xss">
+      <DependentUpon>SchoolEdu_DatabaseDataSet3.xsd</DependentUpon>
     </None>
   </ItemGroup>
   <ItemGroup>

@@ -36,6 +36,7 @@
             this.dangnhap = new System.Windows.Forms.TextBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
@@ -105,6 +106,7 @@
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(43)))), ((int)(((byte)(64)))));
             this.panel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.panel2.Controls.Add(this.comboBox1);
             this.panel2.Controls.Add(this.checkBox1);
             this.panel2.Controls.Add(this.button2);
             this.panel2.Controls.Add(this.button1);
@@ -116,8 +118,22 @@
             this.panel2.Controls.Add(this.panel3);
             this.panel2.Location = new System.Drawing.Point(823, 12);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(355, 467);
+            this.panel2.Size = new System.Drawing.Size(355, 515);
             this.panel2.TabIndex = 7;
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Items.AddRange(new object[] {
+            "Sinh Viên",
+            "Giảng Viên",
+            "Admin"});
+            this.comboBox1.Location = new System.Drawing.Point(11, 367);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(121, 23);
+            this.comboBox1.TabIndex = 11;
+            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.login_combobox);
             // 
             // checkBox1
             // 
@@ -135,7 +151,7 @@
             // button2
             // 
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(211, 412);
+            this.button2.Location = new System.Drawing.Point(216, 462);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(111, 33);
             this.button2.TabIndex = 7;
@@ -146,7 +162,7 @@
             // button1
             // 
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(35, 412);
+            this.button1.Location = new System.Drawing.Point(35, 462);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(113, 33);
             this.button1.TabIndex = 6;
@@ -194,5 +210,6 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.CheckBox checkBox1;
         private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.ComboBox comboBox1;
     }
 }

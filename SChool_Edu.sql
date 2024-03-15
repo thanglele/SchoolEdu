@@ -7,7 +7,7 @@ create table NhanVien (
 	GioiTinh nvarchar(30) not null,
 	DiaChi nvarchar(30) not null,
 	MatKhau nvarchar(30) not null,
-	VaiTro nvarchar(30) not null,
+	VaiTro nvarchar(30) not null;
 );
 
 create table MONHOC
