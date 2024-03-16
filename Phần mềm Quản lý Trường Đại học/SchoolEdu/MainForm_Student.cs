@@ -52,5 +52,10 @@ namespace SchoolEdu
             panel1.Controls.Add(dky);   
             dky.BringToFront();
         }
+
+        private void MainForm_Student_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

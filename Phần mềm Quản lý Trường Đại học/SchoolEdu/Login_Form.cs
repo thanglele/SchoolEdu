@@ -36,41 +36,60 @@ namespace SchoolEdu
                 matkhau.PasswordChar = '*';
             }
         }
-
+        
         bool login(string username, string password)
         {
             return Account.Instance.login(username, password);
+        }
+        bool login1(string username, string password)
+        {
+            return Account.Instance.login1(username, password); 
         }
         private void button1_Click(object sender, EventArgs e)
         {
             string username = dangnhap.Text;
             string password = matkhau.Text;
-            if (login( username, password))
+            try
             {
-                string status = comboBox1.SelectedItem.ToString();
-                if (status == "Sinh Viên")
+                if (comboBox1.SelectedIndex == 0)
                 {
-                    MainForm_Student student = new MainForm_Student();
-                    this.Hide();
-                    student.ShowDialog();
+                    
+                    if (login(username, password))
+                    {
+                        MainForm_Student mainForm_Student = new MainForm_Student();
+                        this.Hide();
+                        mainForm_Student.ShowDialog();
+                    }
+                    else
+                    {
+                        MessageBox.Show("Tài khoản hoặc mật khẩu của bạn không đúng!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
                 }
-                else if (status == "Giảng Viên")
+                else if (comboBox1.SelectedIndex == 1)
                 {
-                    MainForm_Teacher mainForm_Teacher = new MainForm_Teacher();
-                    this.Hide();
-                    mainForm_Teacher.ShowDialog();
+                    if (login1(username, password))
+                    {
+                        MainForm_Teacher mainForm_teacher = new MainForm_Teacher();
+                        this.Hide();
+                        mainForm_teacher.ShowDialog();
+                    }
+                    else
+                    {
+                        MessageBox.Show("Tài khoản hoặc mật khẩu của bạn không đúng!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+
+                    }
                 }
-                else if (status == "Admin")
+                else
                 {
-                    MainForm_Admin admin = new MainForm_Admin();
-                    this.Hide();
-                    admin.ShowDialog();
+                    MessageBox.Show("Bạn chưa chọn thuộc tính để đăng nhập");
                 }
             }
-            else
+            catch(NullReferenceException)
             {
-                MessageBox.Show("Sai tên tài khoản hoặc mật khẩu!", "Thông Báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Vui lòng kiểm tra lại thông tin");
             }
+
+
         }
 
         private void login_closing(object sender, FormClosingEventArgs e)

@@ -55,7 +55,7 @@
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.Location = new System.Drawing.Point(66, 21);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(670, 34);
+            this.button1.Size = new System.Drawing.Size(1013, 67);
             this.button1.TabIndex = 0;
             this.button1.Text = "Thông tin sinh viên";
             this.button1.UseVisualStyleBackColor = true;
@@ -67,9 +67,9 @@
             this.panel1.Controls.Add(this.textBox1);
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.label1);
-            this.panel1.Location = new System.Drawing.Point(42, 72);
+            this.panel1.Location = new System.Drawing.Point(66, 220);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(340, 245);
+            this.panel1.Size = new System.Drawing.Size(436, 321);
             this.panel1.TabIndex = 5;
             // 
             // textBox2
@@ -78,7 +78,7 @@
             this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox2.Location = new System.Drawing.Point(170, 185);
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(153, 26);
+            this.textBox2.Size = new System.Drawing.Size(200, 26);
             this.textBox2.TabIndex = 3;
             // 
             // textBox1
@@ -87,7 +87,7 @@
             this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox1.Location = new System.Drawing.Point(170, 50);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(153, 26);
+            this.textBox1.Size = new System.Drawing.Size(200, 26);
             this.textBox1.TabIndex = 2;
             // 
             // label2
@@ -121,9 +121,9 @@
             this.panel2.Controls.Add(this.label5);
             this.panel2.Controls.Add(this.label4);
             this.panel2.Controls.Add(this.label3);
-            this.panel2.Location = new System.Drawing.Point(432, 72);
+            this.panel2.Location = new System.Drawing.Point(616, 220);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(340, 245);
+            this.panel2.Size = new System.Drawing.Size(463, 321);
             this.panel2.TabIndex = 6;
             // 
             // textBox5
@@ -132,7 +132,7 @@
             this.textBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox5.Location = new System.Drawing.Point(143, 182);
             this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(153, 26);
+            this.textBox5.Size = new System.Drawing.Size(214, 26);
             this.textBox5.TabIndex = 6;
             // 
             // textBox4
@@ -141,7 +141,7 @@
             this.textBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox4.Location = new System.Drawing.Point(143, 114);
             this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(153, 26);
+            this.textBox4.Size = new System.Drawing.Size(214, 26);
             this.textBox4.TabIndex = 5;
             // 
             // textBox3
@@ -150,7 +150,7 @@
             this.textBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox3.Location = new System.Drawing.Point(143, 45);
             this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(153, 26);
+            this.textBox3.Size = new System.Drawing.Size(214, 26);
             this.textBox3.TabIndex = 4;
             // 
             // label5
@@ -196,7 +196,7 @@
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.button1);
             this.Name = "Thongtinsinhvien";
-            this.Size = new System.Drawing.Size(817, 370);
+            this.Size = new System.Drawing.Size(1160, 575);
             this.Load += new System.EventHandler(this.Thongtinsinhvien_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();

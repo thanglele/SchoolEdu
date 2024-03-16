@@ -38,7 +38,7 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.Name = "sinhvien";
-            this.Size = new System.Drawing.Size(817, 370);
+            this.Size = new System.Drawing.Size(1160, 575);
             this.Load += new System.EventHandler(this.sinhvien_Load);
             this.ResumeLayout(false);
 
