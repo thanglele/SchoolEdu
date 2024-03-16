@@ -103,7 +103,13 @@ namespace SchoolEdu
                 }
             }
         }
+
         private void login_combobox(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Login_Form_Load(object sender, EventArgs e)
         {
 
         }
