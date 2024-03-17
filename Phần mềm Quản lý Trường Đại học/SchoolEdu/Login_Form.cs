@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Azure.Identity;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -14,6 +15,7 @@ namespace SchoolEdu
 {
     public partial class Login_Form : Form
     {
+        private static string ID;
         public Login_Form()
         {
             InitializeComponent();
@@ -78,6 +80,7 @@ namespace SchoolEdu
                 {
                     if (login1(username, password))
                     {
+                        ID = username;
                         MainForm_Teacher mainForm_teacher = new MainForm_Teacher();
                         this.Hide();
                         mainForm_teacher.ShowDialog();
@@ -123,6 +126,11 @@ namespace SchoolEdu
         private void login_combobox(object sender, EventArgs e)
         {
 
+        }
+
+        public static string getID()
+        {
+            return ID;
         }
     }
 }
