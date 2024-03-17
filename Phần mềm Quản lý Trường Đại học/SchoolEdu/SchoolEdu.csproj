@@ -226,6 +226,9 @@
     <EmbeddedResource Include="MainForm_Student.resx">
       <DependentUpon>MainForm_Student.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="MainForm_Teacher.resx">
+      <DependentUpon>MainForm_Teacher.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
