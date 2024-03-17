@@ -16,5 +16,10 @@ namespace SchoolEdu
         {
             InitializeComponent();
         }
+
+        private void MainForm_Teacher_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }
