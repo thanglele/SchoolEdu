@@ -17,7 +17,7 @@ namespace SchoolEdu
         {
             InitializeComponent();
         }
-        string ketnoi = "Data Source=172.188.28.154;Initial Catalog=SchoolEdu_Database;;User ID=buimanhduc-database;Password=Buim@nhducsql2024;";
+        string ketnoi = "Data Source=172.188.28.154;Initial Catalog=SchoolEdu_Database;;User ID=tluedu_application;Password=LeTh@ng2884;";
         private void Thongtinlophoc_Load(object sender, EventArgs e)
         {
             panel1.BackColor = Color.FromArgb(90,0,0,0);    
