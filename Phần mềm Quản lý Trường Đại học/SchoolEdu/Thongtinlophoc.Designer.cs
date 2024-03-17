@@ -31,23 +31,23 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Thongtinlophoc));
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.maLopDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.khoaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.nganhDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.nienkhoaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.maGVDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.lOPBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.schoolEdu_DatabaseDataSet3 = new SchoolEdu.SchoolEdu_DatabaseDataSet3();
             this.panel1 = new System.Windows.Forms.Panel();
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.schoolEdu_DatabaseDataSet3 = new SchoolEdu.SchoolEdu_DatabaseDataSet3();
+            this.lOPBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.lOPTableAdapter = new SchoolEdu.SchoolEdu_DatabaseDataSet3TableAdapters.LOPTableAdapter();
+            this.maLopDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.khoaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.nganhDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.nienkhoaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.maGVDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.lOPBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.schoolEdu_DatabaseDataSet3)).BeginInit();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.schoolEdu_DatabaseDataSet3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lOPBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // dataGridView1
@@ -63,51 +63,10 @@
             this.maGVDataGridViewTextBoxColumn});
             this.dataGridView1.DataSource = this.lOPBindingSource;
             this.dataGridView1.Enabled = false;
-            this.dataGridView1.Location = new System.Drawing.Point(4, 252);
+            this.dataGridView1.Location = new System.Drawing.Point(4, 143);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(1153, 303);
+            this.dataGridView1.Size = new System.Drawing.Size(811, 224);
             this.dataGridView1.TabIndex = 0;
-            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
-            // 
-            // maLopDataGridViewTextBoxColumn
-            // 
-            this.maLopDataGridViewTextBoxColumn.DataPropertyName = "MaLop";
-            this.maLopDataGridViewTextBoxColumn.HeaderText = "MaLop";
-            this.maLopDataGridViewTextBoxColumn.Name = "maLopDataGridViewTextBoxColumn";
-            // 
-            // khoaDataGridViewTextBoxColumn
-            // 
-            this.khoaDataGridViewTextBoxColumn.DataPropertyName = "Khoa";
-            this.khoaDataGridViewTextBoxColumn.HeaderText = "Khoa";
-            this.khoaDataGridViewTextBoxColumn.Name = "khoaDataGridViewTextBoxColumn";
-            // 
-            // nganhDataGridViewTextBoxColumn
-            // 
-            this.nganhDataGridViewTextBoxColumn.DataPropertyName = "Nganh";
-            this.nganhDataGridViewTextBoxColumn.HeaderText = "Nganh";
-            this.nganhDataGridViewTextBoxColumn.Name = "nganhDataGridViewTextBoxColumn";
-            // 
-            // nienkhoaDataGridViewTextBoxColumn
-            // 
-            this.nienkhoaDataGridViewTextBoxColumn.DataPropertyName = "Nienkhoa";
-            this.nienkhoaDataGridViewTextBoxColumn.HeaderText = "Nienkhoa";
-            this.nienkhoaDataGridViewTextBoxColumn.Name = "nienkhoaDataGridViewTextBoxColumn";
-            // 
-            // maGVDataGridViewTextBoxColumn
-            // 
-            this.maGVDataGridViewTextBoxColumn.DataPropertyName = "MaGV";
-            this.maGVDataGridViewTextBoxColumn.HeaderText = "MaGV";
-            this.maGVDataGridViewTextBoxColumn.Name = "maGVDataGridViewTextBoxColumn";
-            // 
-            // lOPBindingSource
-            // 
-            this.lOPBindingSource.DataMember = "LOP";
-            this.lOPBindingSource.DataSource = this.schoolEdu_DatabaseDataSet3;
-            // 
-            // schoolEdu_DatabaseDataSet3
-            // 
-            this.schoolEdu_DatabaseDataSet3.DataSetName = "SchoolEdu_DatabaseDataSet3";
-            this.schoolEdu_DatabaseDataSet3.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // panel1
             // 
@@ -117,7 +76,7 @@
             this.panel1.Controls.Add(this.textBox1);
             this.panel1.Controls.Add(this.label1);
             this.panel1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.panel1.Location = new System.Drawing.Point(197, 58);
+            this.panel1.Location = new System.Drawing.Point(16, 3);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(784, 134);
             this.panel1.TabIndex = 1;
@@ -153,6 +112,7 @@
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(152, 25);
             this.textBox1.TabIndex = 2;
+       
             // 
             // label1
             // 
@@ -165,9 +125,49 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Mã lớp";
             // 
+            // schoolEdu_DatabaseDataSet3
+            // 
+            this.schoolEdu_DatabaseDataSet3.DataSetName = "SchoolEdu_DatabaseDataSet3";
+            this.schoolEdu_DatabaseDataSet3.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // lOPBindingSource
+            // 
+            this.lOPBindingSource.DataMember = "LOP";
+            this.lOPBindingSource.DataSource = this.schoolEdu_DatabaseDataSet3;
+            // 
             // lOPTableAdapter
             // 
             this.lOPTableAdapter.ClearBeforeFill = true;
+            // 
+            // maLopDataGridViewTextBoxColumn
+            // 
+            this.maLopDataGridViewTextBoxColumn.DataPropertyName = "MaLop";
+            this.maLopDataGridViewTextBoxColumn.HeaderText = "MaLop";
+            this.maLopDataGridViewTextBoxColumn.Name = "maLopDataGridViewTextBoxColumn";
+            // 
+            // khoaDataGridViewTextBoxColumn
+            // 
+            this.khoaDataGridViewTextBoxColumn.DataPropertyName = "Khoa";
+            this.khoaDataGridViewTextBoxColumn.HeaderText = "Khoa";
+            this.khoaDataGridViewTextBoxColumn.Name = "khoaDataGridViewTextBoxColumn";
+            // 
+            // nganhDataGridViewTextBoxColumn
+            // 
+            this.nganhDataGridViewTextBoxColumn.DataPropertyName = "Nganh";
+            this.nganhDataGridViewTextBoxColumn.HeaderText = "Nganh";
+            this.nganhDataGridViewTextBoxColumn.Name = "nganhDataGridViewTextBoxColumn";
+            // 
+            // nienkhoaDataGridViewTextBoxColumn
+            // 
+            this.nienkhoaDataGridViewTextBoxColumn.DataPropertyName = "Nienkhoa";
+            this.nienkhoaDataGridViewTextBoxColumn.HeaderText = "Nienkhoa";
+            this.nienkhoaDataGridViewTextBoxColumn.Name = "nienkhoaDataGridViewTextBoxColumn";
+            // 
+            // maGVDataGridViewTextBoxColumn
+            // 
+            this.maGVDataGridViewTextBoxColumn.DataPropertyName = "MaGV";
+            this.maGVDataGridViewTextBoxColumn.HeaderText = "MaGV";
+            this.maGVDataGridViewTextBoxColumn.Name = "maGVDataGridViewTextBoxColumn";
             // 
             // Thongtinlophoc
             // 
@@ -178,13 +178,13 @@
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.dataGridView1);
             this.Name = "Thongtinlophoc";
-            this.Size = new System.Drawing.Size(1160, 575);
+            this.Size = new System.Drawing.Size(817, 370);
             this.Load += new System.EventHandler(this.Thongtinlophoc_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.lOPBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.schoolEdu_DatabaseDataSet3)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.schoolEdu_DatabaseDataSet3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lOPBindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }
