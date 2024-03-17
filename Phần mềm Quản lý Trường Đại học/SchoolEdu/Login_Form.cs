@@ -88,6 +88,20 @@ namespace SchoolEdu
 
                     }
                 }
+                else if(comboBox1.SelectedIndex == 2)
+                {
+                    if (login1(username, password))
+                    {
+                        MainForm_Admin mainForm_admin = new MainForm_Admin();
+                        this.Hide();
+                        mainForm_admin.ShowDialog();
+                    }
+                    else
+                    {
+                        MessageBox.Show("Tài khoản hoặc mật khẩu của bạn không đúng!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+
+                    }
+                }    
                 else
                 {
                     MessageBox.Show("Bạn chưa chọn thuộc tính để đăng nhập");
