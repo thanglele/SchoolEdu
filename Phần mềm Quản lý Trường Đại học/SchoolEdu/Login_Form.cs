@@ -18,10 +18,19 @@ namespace SchoolEdu
         {
             InitializeComponent();
         }
-        private bool isExiting = false;
+
+        private void exit_task()
+        {
+            DialogResult r = MessageBox.Show("Bạn có thật sự muốn thoát chương trình?", "Thông báo", MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
+            if (r == DialogResult.OK)
+            {
+                Application.Exit();
+            }
+        }
+
         private void thoat_click(object sender, EventArgs e)
         {
-            isExiting = true;
+            //exit_task();
             Application.Exit();
         }
 
@@ -94,14 +103,8 @@ namespace SchoolEdu
 
         private void login_closing(object sender, FormClosingEventArgs e)
         {
-            if (!isExiting)
-            {
-                DialogResult r = MessageBox.Show("Bạn có thật sự muốn thoát chương trình?", "Thông báo", MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
-                if (r == DialogResult.Cancel)
-                {
-                    e.Cancel = true;
-                }
-            }
+            exit_task();
+            //Application.Exit();
         }
         private void login_combobox(object sender, EventArgs e)
         {
