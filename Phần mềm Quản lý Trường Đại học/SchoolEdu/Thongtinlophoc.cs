@@ -44,6 +44,10 @@ namespace SchoolEdu
             textBox1.Enabled = true;
            
         }
-        
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

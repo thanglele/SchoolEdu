@@ -16,5 +16,11 @@ namespace SchoolEdu
         {
             InitializeComponent();
         }
+
+        private void MainForm_Admin_Load(object sender, EventArgs e)
+        {
+            var db = new database();
+            dgvData.DataSource = db.SelectData();
+        }
     }
 }
