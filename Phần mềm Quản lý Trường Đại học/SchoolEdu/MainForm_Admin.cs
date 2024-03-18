@@ -37,5 +37,11 @@ namespace SchoolEdu
          
 
         }
+
+        private void thoat_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            Application.Exit();
+        }
     }
 }
