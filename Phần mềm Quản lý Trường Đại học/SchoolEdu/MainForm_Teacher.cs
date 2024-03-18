@@ -7,17 +7,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using System.Data.SqlClient;
-using System.Windows.Input;
 
 namespace SchoolEdu
 {
     public partial class MainForm_Teacher : Form
     {
-        private static string sql_string = "Data Source=172.188.28.154;Initial Catalog=SchoolEdu_Database;User ID=tluedu_application;Password=LeTh@ng2884;Connect Timeout=30;";
-        private SqlConnection connection = new SqlConnection(sql_string);
-        static string ID = "";
-
         public MainForm_Teacher()
         {
             InitializeComponent();
