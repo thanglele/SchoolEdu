@@ -67,7 +67,8 @@ namespace SchoolEdu
                     
                     if (login(username, password))
                     {
-                        MainForm_Student mainForm_Student = new MainForm_Student();
+                        string dulieu = dangnhap.Text.ToString();
+                        MainForm_Student mainForm_Student = new MainForm_Student(dulieu);
                         this.Hide();
                         mainForm_Student.ShowDialog();
                     }
@@ -120,8 +121,16 @@ namespace SchoolEdu
 
         private void login_closing(object sender, FormClosingEventArgs e)
         {
-            exit_task();
-            //Application.Exit();
+            //exit_task();
+            ////Application.Exit();
+            ///if (!isExiting)
+            {
+                DialogResult r = MessageBox.Show("Bạn có thật sự muốn thoát chương trình?", "Thông báo", MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
+                if (r == DialogResult.Cancel)
+                {
+                    e.Cancel = true;
+                }
+            }
         }
         private void login_combobox(object sender, EventArgs e)
         {
@@ -131,6 +140,14 @@ namespace SchoolEdu
         public static string getID()
         {
             return ID;
+        }
+        public string getname()
+        {
+            return dangnhap.Text;
+        }
+        private void Login_Form_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

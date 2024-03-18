@@ -69,7 +69,7 @@
       <HintPath>..\packages\Microsoft.IdentityModel.Tokens.6.8.0\lib\net461\Microsoft.IdentityModel.Tokens.dll</HintPath>
     </Reference>
     <Reference Include="System">
-      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.6.1\System.dll</HintPath>
+      <HintPath>C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.6.1\System.dll</HintPath>
     </Reference>
     <Reference Include="System.Buffers, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
       <HintPath>..\packages\System.Buffers.4.5.1\lib\net461\System.Buffers.dll</HintPath>
@@ -199,6 +199,16 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>SchoolEdu_DatabaseDataSet3.xsd</DependentUpon>
     </Compile>
+    <Compile Include="SchoolEdu_DatabaseDataSet4.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SchoolEdu_DatabaseDataSet4.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="SchoolEdu_DatabaseDataSet5.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SchoolEdu_DatabaseDataSet5.xsd</DependentUpon>
+    </Compile>
     <Compile Include="sinhvien.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -216,6 +226,12 @@
     </Compile>
     <Compile Include="Thongtinsinhvien.Designer.cs">
       <DependentUpon>Thongtinsinhvien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="tonggpa.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="tonggpa.Designer.cs">
+      <DependentUpon>tonggpa.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="dangkyhoc.resx">
       <DependentUpon>dangkyhoc.cs</DependentUpon>
@@ -250,6 +266,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Thongtinsinhvien.resx">
       <DependentUpon>Thongtinsinhvien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="tonggpa.resx">
+      <DependentUpon>tonggpa.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
@@ -304,6 +323,28 @@
     </None>
     <None Include="SchoolEdu_DatabaseDataSet3.xss">
       <DependentUpon>SchoolEdu_DatabaseDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="SchoolEdu_DatabaseDataSet4.xsc">
+      <DependentUpon>SchoolEdu_DatabaseDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="SchoolEdu_DatabaseDataSet4.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SchoolEdu_DatabaseDataSet4.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="SchoolEdu_DatabaseDataSet4.xss">
+      <DependentUpon>SchoolEdu_DatabaseDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="SchoolEdu_DatabaseDataSet5.xsc">
+      <DependentUpon>SchoolEdu_DatabaseDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="SchoolEdu_DatabaseDataSet5.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SchoolEdu_DatabaseDataSet5.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="SchoolEdu_DatabaseDataSet5.xss">
+      <DependentUpon>SchoolEdu_DatabaseDataSet5.xsd</DependentUpon>
     </None>
   </ItemGroup>
   <ItemGroup>

@@ -31,25 +31,24 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm_Student));
             this.panel1 = new System.Windows.Forms.Panel();
             this.logout = new System.Windows.Forms.Button();
+            this.sinhvien1 = new SchoolEdu.sinhvien();
+            this.thongtinsinhvien1 = new SchoolEdu.Thongtinsinhvien();
+            this.thongtinlophoc1 = new SchoolEdu.Thongtinlophoc();
             this.sinhToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.đăngKýHọcToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.đăngKýHọcToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.traCứuHọcPhíToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.tổngGpaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.sinhvien2 = new SchoolEdu.sinhvien();
-            this.sinhvien1 = new SchoolEdu.sinhvien();
-            this.thongtinsinhvien1 = new SchoolEdu.Thongtinsinhvien();
+            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.panel1.SuspendLayout();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.sinhvien2);
             this.panel1.Controls.Add(this.sinhvien1);
             this.panel1.Controls.Add(this.thongtinsinhvien1);
+            this.panel1.Controls.Add(this.thongtinlophoc1);
             this.panel1.Location = new System.Drawing.Point(12, 48);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1160, 575);
@@ -65,6 +64,36 @@
             this.logout.Text = "Đăng xuất";
             this.logout.UseVisualStyleBackColor = true;
             this.logout.Click += new System.EventHandler(this.logout_click);
+            // 
+            // sinhvien1
+            // 
+            this.sinhvien1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("sinhvien1.BackgroundImage")));
+            this.sinhvien1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.sinhvien1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.sinhvien1.Location = new System.Drawing.Point(0, 0);
+            this.sinhvien1.Name = "sinhvien1";
+            this.sinhvien1.Size = new System.Drawing.Size(1160, 575);
+            this.sinhvien1.TabIndex = 1;
+            // 
+            // thongtinsinhvien1
+            // 
+            this.thongtinsinhvien1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("thongtinsinhvien1.BackgroundImage")));
+            this.thongtinsinhvien1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.thongtinsinhvien1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.thongtinsinhvien1.Location = new System.Drawing.Point(0, 0);
+            this.thongtinsinhvien1.Name = "thongtinsinhvien1";
+            this.thongtinsinhvien1.Size = new System.Drawing.Size(1160, 575);
+            this.thongtinsinhvien1.TabIndex = 0;
+            // 
+            // thongtinlophoc1
+            // 
+            this.thongtinlophoc1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("thongtinlophoc1.BackgroundImage")));
+            this.thongtinlophoc1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.thongtinlophoc1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.thongtinlophoc1.Location = new System.Drawing.Point(0, 0);
+            this.thongtinlophoc1.Name = "thongtinlophoc1";
+            this.thongtinlophoc1.Size = new System.Drawing.Size(1160, 575);
+            this.thongtinlophoc1.TabIndex = 2;
             // 
             // sinhToolStripMenuItem
             // 
@@ -98,12 +127,12 @@
             this.đăngKýHọcToolStripMenuItem1.Text = "Đăng ký học";
             this.đăngKýHọcToolStripMenuItem1.Click += new System.EventHandler(this.dky_click);
             // 
-            // traCứuHọcPhíToolStripMenuItem
+            // tổngGpaToolStripMenuItem
             // 
-            this.traCứuHọcPhíToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.traCứuHọcPhíToolStripMenuItem.Name = "traCứuHọcPhíToolStripMenuItem";
-            this.traCứuHọcPhíToolStripMenuItem.Size = new System.Drawing.Size(89, 29);
-            this.traCứuHọcPhíToolStripMenuItem.Text = "Học phí";
+            this.tổngGpaToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tổngGpaToolStripMenuItem.Name = "tổngGpaToolStripMenuItem";
+            this.tổngGpaToolStripMenuItem.Size = new System.Drawing.Size(107, 29);
+            this.tổngGpaToolStripMenuItem.Text = "Tổng GPA";
             // 
             // menuStrip1
             // 
@@ -114,50 +143,12 @@
             this.toolStripMenuItem1,
             this.đăngKýHọcToolStripMenuItem,
             this.đăngKýHọcToolStripMenuItem1,
-            this.traCứuHọcPhíToolStripMenuItem,
             this.tổngGpaToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(1184, 33);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
-            // 
-            // tổngGpaToolStripMenuItem
-            // 
-            this.tổngGpaToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tổngGpaToolStripMenuItem.Name = "tổngGpaToolStripMenuItem";
-            this.tổngGpaToolStripMenuItem.Size = new System.Drawing.Size(107, 29);
-            this.tổngGpaToolStripMenuItem.Text = "Tổng GPA";
-            // 
-            // sinhvien2
-            // 
-            this.sinhvien2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("sinhvien2.BackgroundImage")));
-            this.sinhvien2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.sinhvien2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.sinhvien2.Location = new System.Drawing.Point(0, 0);
-            this.sinhvien2.Name = "sinhvien2";
-            this.sinhvien2.Size = new System.Drawing.Size(1160, 575);
-            this.sinhvien2.TabIndex = 2;
-            // 
-            // sinhvien1
-            // 
-            this.sinhvien1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("sinhvien1.BackgroundImage")));
-            this.sinhvien1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.sinhvien1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.sinhvien1.Location = new System.Drawing.Point(0, 0);
-            this.sinhvien1.Name = "sinhvien1";
-            this.sinhvien1.Size = new System.Drawing.Size(1160, 575);
-            this.sinhvien1.TabIndex = 1;
-            // 
-            // thongtinsinhvien1
-            // 
-            this.thongtinsinhvien1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("thongtinsinhvien1.BackgroundImage")));
-            this.thongtinsinhvien1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.thongtinsinhvien1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.thongtinsinhvien1.Location = new System.Drawing.Point(0, 0);
-            this.thongtinsinhvien1.Name = "thongtinsinhvien1";
-            this.thongtinsinhvien1.Size = new System.Drawing.Size(1160, 575);
-            this.thongtinsinhvien1.TabIndex = 0;
             // 
             // MainForm_Student
             // 
@@ -185,15 +176,14 @@
         #endregion
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button logout;
-        private Thongtinsinhvien thongtinsinhvien1;
         private sinhvien sinhvien1;
-        private sinhvien sinhvien2;
+        private Thongtinsinhvien thongtinsinhvien1;
+        private Thongtinlophoc thongtinlophoc1;
         private System.Windows.Forms.ToolStripMenuItem sinhToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem đăngKýHọcToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem đăngKýHọcToolStripMenuItem1;
-        private System.Windows.Forms.ToolStripMenuItem traCứuHọcPhíToolStripMenuItem;
-        private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem tổngGpaToolStripMenuItem;
+        private System.Windows.Forms.MenuStrip menuStrip1;
     }
 }

@@ -29,18 +29,30 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.ListViewItem listViewItem1 = new System.Windows.Forms.ListViewItem(new string[] {
-            ""}, -1, System.Drawing.Color.Empty, System.Drawing.SystemColors.Window, new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0))));
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(dangkyhoc));
             this.panel1 = new System.Windows.Forms.Panel();
-            this.listView1 = new System.Windows.Forms.ListView();
-            this.MaMH = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.tenmon = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.SoTC = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.dataGridView2 = new System.Windows.Forms.DataGridView();
+            this.maMHDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tenMHDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.soTCDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.mONHOCBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.schoolEdu_DatabaseDataSet4 = new SchoolEdu.SchoolEdu_DatabaseDataSet4();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.dataGridView4 = new System.Windows.Forms.DataGridView();
+            this.maGVDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.maMHDataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ngaybdDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.phonghocDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.caHocDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ngayktDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.gVMHBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.schoolEdu_DatabaseDataSet5 = new SchoolEdu.SchoolEdu_DatabaseDataSet5();
+            this.dataGridView3 = new System.Windows.Forms.DataGridView();
             this.hocphan = new System.Windows.Forms.DataGridView();
             this.panel3 = new System.Windows.Forms.Panel();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.mONHOCTableAdapter = new SchoolEdu.SchoolEdu_DatabaseDataSet4TableAdapters.MONHOCTableAdapter();
+            this.gVMHTableAdapter = new SchoolEdu.SchoolEdu_DatabaseDataSet5TableAdapters.GVMHTableAdapter();
             this.maSVDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.maMHDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ngaybatdauDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -50,7 +62,14 @@
             this.schoolEdu_DatabaseDataSet2 = new SchoolEdu.SchoolEdu_DatabaseDataSet2();
             this.sVMHTableAdapter = new SchoolEdu.SchoolEdu_DatabaseDataSet2TableAdapters.SVMHTableAdapter();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.mONHOCBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.schoolEdu_DatabaseDataSet4)).BeginInit();
             this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gVMHBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.schoolEdu_DatabaseDataSet5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.hocphan)).BeginInit();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -60,54 +79,160 @@
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.listView1);
+            this.panel1.Controls.Add(this.dataGridView2);
             this.panel1.Location = new System.Drawing.Point(4, 4);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(521, 301);
             this.panel1.TabIndex = 0;
             // 
-            // listView1
+            // dataGridView2
             // 
-            this.listView1.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
-            this.MaMH,
-            this.tenmon,
-            this.SoTC});
-            this.listView1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.listView1.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.listView1.HideSelection = false;
-            listViewItem1.Checked = true;
-            listViewItem1.StateImageIndex = 1;
-            this.listView1.Items.AddRange(new System.Windows.Forms.ListViewItem[] {
-            listViewItem1});
-            this.listView1.Location = new System.Drawing.Point(0, 0);
-            this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(521, 301);
-            this.listView1.TabIndex = 0;
-            this.listView1.UseCompatibleStateImageBehavior = false;
-            this.listView1.View = System.Windows.Forms.View.Details;
-            this.listView1.SelectedIndexChanged += new System.EventHandler(this.listView1_SelectedIndexChanged);
+            this.dataGridView2.AllowUserToAddRows = false;
+            this.dataGridView2.AllowUserToDeleteRows = false;
+            this.dataGridView2.AllowUserToResizeColumns = false;
+            this.dataGridView2.AllowUserToResizeRows = false;
+            this.dataGridView2.AutoGenerateColumns = false;
+            this.dataGridView2.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView2.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.maMHDataGridViewTextBoxColumn1,
+            this.tenMHDataGridViewTextBoxColumn,
+            this.soTCDataGridViewTextBoxColumn1});
+            this.dataGridView2.DataSource = this.mONHOCBindingSource;
+            this.dataGridView2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dataGridView2.Location = new System.Drawing.Point(0, 0);
+            this.dataGridView2.Name = "dataGridView2";
+            this.dataGridView2.ReadOnly = true;
+            this.dataGridView2.Size = new System.Drawing.Size(521, 301);
+            this.dataGridView2.TabIndex = 0;
+            this.dataGridView2.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.monhoc_celldoubleclick);
             // 
-            // MaMH
+            // maMHDataGridViewTextBoxColumn1
             // 
-            this.MaMH.Text = "Mã Môn Học";
-            this.MaMH.Width = 91;
+            this.maMHDataGridViewTextBoxColumn1.DataPropertyName = "MaMH";
+            this.maMHDataGridViewTextBoxColumn1.HeaderText = "MaMH";
+            this.maMHDataGridViewTextBoxColumn1.Name = "maMHDataGridViewTextBoxColumn1";
+            this.maMHDataGridViewTextBoxColumn1.ReadOnly = true;
             // 
-            // tenmon
+            // tenMHDataGridViewTextBoxColumn
             // 
-            this.tenmon.Text = "Tên Môn Học";
-            this.tenmon.Width = 104;
+            this.tenMHDataGridViewTextBoxColumn.DataPropertyName = "TenMH";
+            this.tenMHDataGridViewTextBoxColumn.HeaderText = "TenMH";
+            this.tenMHDataGridViewTextBoxColumn.Name = "tenMHDataGridViewTextBoxColumn";
+            this.tenMHDataGridViewTextBoxColumn.ReadOnly = true;
             // 
-            // SoTC
+            // soTCDataGridViewTextBoxColumn1
             // 
-            this.SoTC.Text = "Số TC";
+            this.soTCDataGridViewTextBoxColumn1.DataPropertyName = "SoTC";
+            this.soTCDataGridViewTextBoxColumn1.HeaderText = "SoTC";
+            this.soTCDataGridViewTextBoxColumn1.Name = "soTCDataGridViewTextBoxColumn1";
+            this.soTCDataGridViewTextBoxColumn1.ReadOnly = true;
+            // 
+            // mONHOCBindingSource
+            // 
+            this.mONHOCBindingSource.DataMember = "MONHOC";
+            this.mONHOCBindingSource.DataSource = this.schoolEdu_DatabaseDataSet4;
+            // 
+            // schoolEdu_DatabaseDataSet4
+            // 
+            this.schoolEdu_DatabaseDataSet4.DataSetName = "SchoolEdu_DatabaseDataSet4";
+            this.schoolEdu_DatabaseDataSet4.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // panel2
             // 
+            this.panel2.Controls.Add(this.dataGridView4);
+            this.panel2.Controls.Add(this.dataGridView3);
             this.panel2.Controls.Add(this.hocphan);
             this.panel2.Location = new System.Drawing.Point(531, 4);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(616, 301);
             this.panel2.TabIndex = 1;
+            // 
+            // dataGridView4
+            // 
+            this.dataGridView4.AllowUserToAddRows = false;
+            this.dataGridView4.AllowUserToDeleteRows = false;
+            this.dataGridView4.AllowUserToResizeColumns = false;
+            this.dataGridView4.AllowUserToResizeRows = false;
+            this.dataGridView4.AutoGenerateColumns = false;
+            this.dataGridView4.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dataGridView4.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView4.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.maGVDataGridViewTextBoxColumn,
+            this.maMHDataGridViewTextBoxColumn2,
+            this.ngaybdDataGridViewTextBoxColumn,
+            this.phonghocDataGridViewTextBoxColumn,
+            this.caHocDataGridViewTextBoxColumn,
+            this.ngayktDataGridViewTextBoxColumn});
+            this.dataGridView4.DataSource = this.gVMHBindingSource;
+            this.dataGridView4.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dataGridView4.Location = new System.Drawing.Point(0, 0);
+            this.dataGridView4.Name = "dataGridView4";
+            this.dataGridView4.ReadOnly = true;
+            this.dataGridView4.Size = new System.Drawing.Size(616, 301);
+            this.dataGridView4.TabIndex = 2;
+            this.dataGridView4.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.GV_MH_celldoubleclick);
+            // 
+            // maGVDataGridViewTextBoxColumn
+            // 
+            this.maGVDataGridViewTextBoxColumn.DataPropertyName = "MaGV";
+            this.maGVDataGridViewTextBoxColumn.HeaderText = "MaGV";
+            this.maGVDataGridViewTextBoxColumn.Name = "maGVDataGridViewTextBoxColumn";
+            this.maGVDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // maMHDataGridViewTextBoxColumn2
+            // 
+            this.maMHDataGridViewTextBoxColumn2.DataPropertyName = "MaMH";
+            this.maMHDataGridViewTextBoxColumn2.HeaderText = "MaMH";
+            this.maMHDataGridViewTextBoxColumn2.Name = "maMHDataGridViewTextBoxColumn2";
+            this.maMHDataGridViewTextBoxColumn2.ReadOnly = true;
+            // 
+            // ngaybdDataGridViewTextBoxColumn
+            // 
+            this.ngaybdDataGridViewTextBoxColumn.DataPropertyName = "Ngaybd";
+            this.ngaybdDataGridViewTextBoxColumn.HeaderText = "Ngaybd";
+            this.ngaybdDataGridViewTextBoxColumn.Name = "ngaybdDataGridViewTextBoxColumn";
+            this.ngaybdDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // phonghocDataGridViewTextBoxColumn
+            // 
+            this.phonghocDataGridViewTextBoxColumn.DataPropertyName = "Phonghoc";
+            this.phonghocDataGridViewTextBoxColumn.HeaderText = "Phonghoc";
+            this.phonghocDataGridViewTextBoxColumn.Name = "phonghocDataGridViewTextBoxColumn";
+            this.phonghocDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // caHocDataGridViewTextBoxColumn
+            // 
+            this.caHocDataGridViewTextBoxColumn.DataPropertyName = "CaHoc";
+            this.caHocDataGridViewTextBoxColumn.HeaderText = "CaHoc";
+            this.caHocDataGridViewTextBoxColumn.Name = "caHocDataGridViewTextBoxColumn";
+            this.caHocDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // ngayktDataGridViewTextBoxColumn
+            // 
+            this.ngayktDataGridViewTextBoxColumn.DataPropertyName = "Ngaykt";
+            this.ngayktDataGridViewTextBoxColumn.HeaderText = "Ngaykt";
+            this.ngayktDataGridViewTextBoxColumn.Name = "ngayktDataGridViewTextBoxColumn";
+            this.ngayktDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // gVMHBindingSource
+            // 
+            this.gVMHBindingSource.DataMember = "GVMH";
+            this.gVMHBindingSource.DataSource = this.schoolEdu_DatabaseDataSet5;
+            // 
+            // schoolEdu_DatabaseDataSet5
+            // 
+            this.schoolEdu_DatabaseDataSet5.DataSetName = "SchoolEdu_DatabaseDataSet5";
+            this.schoolEdu_DatabaseDataSet5.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // dataGridView3
+            // 
+            this.dataGridView3.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dataGridView3.Location = new System.Drawing.Point(0, 0);
+            this.dataGridView3.Name = "dataGridView3";
+            this.dataGridView3.Size = new System.Drawing.Size(616, 301);
+            this.dataGridView3.TabIndex = 1;
             // 
             // hocphan
             // 
@@ -128,6 +253,10 @@
             // 
             // dataGridView1
             // 
+            this.dataGridView1.AllowUserToAddRows = false;
+            this.dataGridView1.AllowUserToDeleteRows = false;
+            this.dataGridView1.AllowUserToResizeColumns = false;
+            this.dataGridView1.AllowUserToResizeRows = false;
             this.dataGridView1.AutoGenerateColumns = false;
             this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
@@ -142,38 +271,52 @@
             this.dataGridView1.Enabled = false;
             this.dataGridView1.Location = new System.Drawing.Point(0, 0);
             this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.ReadOnly = true;
             this.dataGridView1.Size = new System.Drawing.Size(1153, 261);
             this.dataGridView1.TabIndex = 0;
+            // 
+            // mONHOCTableAdapter
+            // 
+            this.mONHOCTableAdapter.ClearBeforeFill = true;
+            // 
+            // gVMHTableAdapter
+            // 
+            this.gVMHTableAdapter.ClearBeforeFill = true;
             // 
             // maSVDataGridViewTextBoxColumn
             // 
             this.maSVDataGridViewTextBoxColumn.DataPropertyName = "MaSV";
             this.maSVDataGridViewTextBoxColumn.HeaderText = "MaSV";
             this.maSVDataGridViewTextBoxColumn.Name = "maSVDataGridViewTextBoxColumn";
+            this.maSVDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // maMHDataGridViewTextBoxColumn
             // 
             this.maMHDataGridViewTextBoxColumn.DataPropertyName = "MaMH";
             this.maMHDataGridViewTextBoxColumn.HeaderText = "MaMH";
             this.maMHDataGridViewTextBoxColumn.Name = "maMHDataGridViewTextBoxColumn";
+            this.maMHDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // ngaybatdauDataGridViewTextBoxColumn
             // 
             this.ngaybatdauDataGridViewTextBoxColumn.DataPropertyName = "Ngaybatdau";
             this.ngaybatdauDataGridViewTextBoxColumn.HeaderText = "Ngaybatdau";
             this.ngaybatdauDataGridViewTextBoxColumn.Name = "ngaybatdauDataGridViewTextBoxColumn";
+            this.ngaybatdauDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // ngayketthucDataGridViewTextBoxColumn
             // 
             this.ngayketthucDataGridViewTextBoxColumn.DataPropertyName = "Ngayketthuc";
             this.ngayketthucDataGridViewTextBoxColumn.HeaderText = "Ngayketthuc";
             this.ngayketthucDataGridViewTextBoxColumn.Name = "ngayketthucDataGridViewTextBoxColumn";
+            this.ngayketthucDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // soTCDataGridViewTextBoxColumn
             // 
             this.soTCDataGridViewTextBoxColumn.DataPropertyName = "SoTC";
             this.soTCDataGridViewTextBoxColumn.HeaderText = "SoTC";
             this.soTCDataGridViewTextBoxColumn.Name = "soTCDataGridViewTextBoxColumn";
+            this.soTCDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // sVMHBindingSource
             // 
@@ -202,7 +345,14 @@
             this.Size = new System.Drawing.Size(1160, 575);
             this.Load += new System.EventHandler(this.dangkyhoc_Load);
             this.panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.mONHOCBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.schoolEdu_DatabaseDataSet4)).EndInit();
             this.panel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gVMHBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.schoolEdu_DatabaseDataSet5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.hocphan)).EndInit();
             this.panel3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
@@ -215,11 +365,8 @@
         #endregion
 
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.ListView listView1;
-        private System.Windows.Forms.ColumnHeader MaMH;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.ColumnHeader tenmon;
         private System.Windows.Forms.DataGridView hocphan;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.DataGridViewTextBoxColumn maSVDataGridViewTextBoxColumn;
@@ -230,6 +377,23 @@
         private System.Windows.Forms.BindingSource sVMHBindingSource;
         private SchoolEdu_DatabaseDataSet2 schoolEdu_DatabaseDataSet2;
         private SchoolEdu_DatabaseDataSet2TableAdapters.SVMHTableAdapter sVMHTableAdapter;
-        private System.Windows.Forms.ColumnHeader SoTC;
+        private System.Windows.Forms.DataGridView dataGridView2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn maMHDataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn tenMHDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn soTCDataGridViewTextBoxColumn1;
+        private System.Windows.Forms.BindingSource mONHOCBindingSource;
+        private SchoolEdu_DatabaseDataSet4 schoolEdu_DatabaseDataSet4;
+        private SchoolEdu_DatabaseDataSet4TableAdapters.MONHOCTableAdapter mONHOCTableAdapter;
+        private System.Windows.Forms.DataGridView dataGridView4;
+        private System.Windows.Forms.DataGridViewTextBoxColumn maGVDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn maMHDataGridViewTextBoxColumn2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ngaybdDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn phonghocDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn caHocDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ngayktDataGridViewTextBoxColumn;
+        private System.Windows.Forms.BindingSource gVMHBindingSource;
+        private SchoolEdu_DatabaseDataSet5 schoolEdu_DatabaseDataSet5;
+        private System.Windows.Forms.DataGridView dataGridView3;
+        private SchoolEdu_DatabaseDataSet5TableAdapters.GVMHTableAdapter gVMHTableAdapter;
     }
 }

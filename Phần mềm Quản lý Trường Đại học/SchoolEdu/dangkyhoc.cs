@@ -20,7 +20,7 @@ namespace SchoolEdu
         {
             InitializeComponent();
         }
-        string dangkyhoc1 = "Data Source=172.188.28.154;Initial Catalog=SchoolEdu_Database;Persist Security Info=True;User ID=buimanhduc-database;Password=Buim@nhducsql2024;Encrypt=True";
+        string dangkyhoc1 = "Data Source=172.188.28.154;Initial Catalog=SchoolEdu_Database;User ID=buimanhduc-database;Password=Buim@nhducsql2024";
         SqlConnection conn = new SqlConnection();
         private void dangkyhoc_Load(object sender, EventArgs e)
         {
@@ -40,30 +40,101 @@ namespace SchoolEdu
             dki.Fill(dt);
             return dt;
         }
-        void HienThi_MonHoc()
-        {
-            DataTable dt = new DataTable();
-            dt = GetData();
-            ListViewItem lv;
-            for (int i = 0; i < dt.Rows.Count; i++)
-            {
-                DataRow dr = dt.Rows[i];
-                ListViewItem item = new ListViewItem(dr[1].ToString());
-                ListViewItem.ListViewSubItem subitem = new ListViewItem.ListViewSubItem(item, dt.Rows[i][0].ToString());
-                item.SubItems.Add(dr[2].ToString());
-                item.SubItems.Add(dr[3].ToString());
-                item.SubItems.Add(subitem);
-                listView1.Items.Add(item);
-            }
-            listView1.View = View.Details;
-            listView1.AutoResizeColumns(ColumnHeaderAutoResizeStyle.ColumnContent);
-            listView1.AutoResizeColumns(ColumnHeaderAutoResizeStyle.HeaderSize);
-        
-        }
+       
 
         private void listView1_SelectedIndexChanged(object sender, EventArgs e)
         {
 
+        }
+        public void getmonhoc(string monhoc)
+        {
+            SqlConnection sqlConnection = new SqlConnection(dangkyhoc1);
+            sqlConnection.Open();
+            string sql = "Select * from MONHOC";
+            SqlDataAdapter sqlDataAdapter = new SqlDataAdapter(sql, sqlConnection);
+            DataTable dt = new DataTable();
+            sqlDataAdapter.Fill(dt);
+            dataGridView2.DataSource = dt;
+        }
+        public void gettinhoc(string tinhoc)
+        {
+            SqlConnection sqlConnection = new SqlConnection(dangkyhoc1);
+            sqlConnection.Open();
+            string sql = "Select * from SVMH where MaSV = @SV";
+            SqlCommand sqlCommand = new SqlCommand(sql, sqlConnection);
+            sqlCommand.Parameters.AddWithValue("@SV", tinhoc);
+            SqlDataAdapter adp = new SqlDataAdapter(sqlCommand) ;
+            DataTable dataTable = new DataTable();
+            adp.Fill(dataTable);
+            dataGridView1.DataSource = dataTable;
+        }
+
+        private void monhoc_celldoubleclick(object sender, DataGridViewCellEventArgs e)
+        {
+            DataGridViewRow dataGridViewRow = new DataGridViewRow();
+            dataGridViewRow = dataGridView2.Rows[e.RowIndex];
+            string ma = Convert.ToString(dataGridViewRow.Cells[0].Value);
+            SqlConnection sqlConnection = new SqlConnection(dangkyhoc1);
+            sqlConnection.Open();
+            string sql = "Select * from GVMH where MaMH = @dataGridViewRow";
+            SqlCommand sqlCommand = new SqlCommand( sql, sqlConnection);
+            sqlCommand.Parameters.AddWithValue("@dataGridViewRow", ma);
+            SqlDataAdapter sqlDataAdapter = new SqlDataAdapter(sqlCommand) ;
+            DataTable dataTable = new DataTable() ;
+            sqlDataAdapter.Fill(dataTable);
+            dataGridView4.DataSource = dataTable;  
+        }
+
+        private void GV_MH_celldoubleclick(object sender, DataGridViewCellEventArgs e)
+        {
+            DataGridViewRow data = new DataGridViewRow();
+            data = dataGridView4.Rows[e.RowIndex];
+            DataGridViewRow data1 = new DataGridViewRow();
+            data1 = dataGridView2.Rows[e.RowIndex];
+            DataGridViewRow data2 = new DataGridViewRow();
+            data2 = dataGridView1.Rows[e.RowIndex];
+            string ma = Convert.ToString(data2.Cells[0].Value);
+            SqlConnection sqlConnection = new SqlConnection(dangkyhoc1);
+            sqlConnection.Open();
+
+            
+            if (MessageBox.Show("Bạn có đki môn học này không", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+            {
+                string mamh = Convert.ToString(data.Cells[1].Value);
+                //string ngaybd = Convert.ToString(data.Cells[2].Value);
+                //string ngaykt = Convert.ToString(data.Cells[5].Value);
+                string sotc = Convert.ToString(data1.Cells[2].Value);
+                string insert = "Insert into SVMH values(@ma, @mamh, @ngaybd, @ngaykt, @sotc)";
+
+                //làm thế này cũng ok rồi, giờ convert string thì chú ý kỹ, liên quan đến datetime thì k convert đc
+                //giờ hết bug rồi đấy v
+                // nạp đc lên git nạp luôn đi
+                // chưa làm tính gpa thôi
+
+                SqlCommand sql = new SqlCommand(insert, sqlConnection);
+                sql.Parameters.AddWithValue("@ma", ma);
+                sql.Parameters.AddWithValue("@mamh", mamh);
+                sql.Parameters.AddWithValue("@ngaybd", data.Cells[2].Value);
+                sql.Parameters.AddWithValue("@ngaykt", data.Cells[5].Value);
+                sql.Parameters.AddWithValue("@sotc", sotc);
+                try
+                {
+                    sql.ExecuteScalar();
+                    string sql1 = "Select * from SVMH where MaSV = @SV";
+                    SqlCommand sqlCommand = new SqlCommand(sql1, sqlConnection);
+                    sqlCommand.Parameters.AddWithValue("@SV", ma);
+                    SqlDataAdapter sqlDataAdapter = new SqlDataAdapter(sqlCommand);
+                    DataTable dataTable = new DataTable();
+                    sqlDataAdapter.Fill(dataTable);
+                    dataGridView1.DataSource = dataTable;
+                    MessageBox.Show("Đăng ký môn học thành công", "Thông báo");
+                }
+                catch (Exception)
+                {
+                    MessageBox.Show("Môn học này đã được đăng ký sẵn, vui lòng chọn môn khác", "Thông báo");
+                }
+            }
+            
         }
     }
 }

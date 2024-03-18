@@ -28,6 +28,7 @@ namespace SchoolEdu
             Thongtinsinhvien ttsv = new Thongtinsinhvien();
             panel1.Controls.Add(ttsv);
             ttsv.BringToFront();
+            ttsv.getname(nhan);
         }
 
         private void sinhvien_click(object sender, EventArgs e)
@@ -44,6 +45,7 @@ namespace SchoolEdu
             Thongtinlophoc ttlh = new Thongtinlophoc(); 
             panel1.Controls.Add(ttlh);
             ttlh.BringToFront();
+            ttlh.getdulieulop();
         }
 
         private void dky_click(object sender, EventArgs e)
@@ -51,11 +53,20 @@ namespace SchoolEdu
             dangkyhoc dky = new dangkyhoc();
             panel1.Controls.Add(dky);   
             dky.BringToFront();
+            dky.getmonhoc(nhan);
+            dky.gettinhoc(nhan);
         }
-
+        static string nhan;
+        public MainForm_Student(string data)
+        {
+            InitializeComponent();
+            nhan = data;
+        }
         private void MainForm_Student_Load(object sender, EventArgs e)
         {
 
         }
     }
 }
+
+ 
