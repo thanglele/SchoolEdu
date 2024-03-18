@@ -106,11 +106,6 @@ namespace SchoolEdu
                 string sotc = Convert.ToString(data1.Cells[2].Value);
                 string insert = "Insert into SVMH values(@ma, @mamh, @ngaybd, @ngaykt, @sotc)";
 
-                //làm thế này cũng ok rồi, giờ convert string thì chú ý kỹ, liên quan đến datetime thì k convert đc
-                //giờ hết bug rồi đấy v
-                // nạp đc lên git nạp luôn đi
-                // chưa làm tính gpa thôi
-
                 SqlCommand sql = new SqlCommand(insert, sqlConnection);
                 sql.Parameters.AddWithValue("@ma", ma);
                 sql.Parameters.AddWithValue("@mamh", mamh);
