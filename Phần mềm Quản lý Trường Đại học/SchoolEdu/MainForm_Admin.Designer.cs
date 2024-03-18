@@ -28,8 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.sqlCommandBuilder1 = new Microsoft.Data.SqlClient.SqlCommandBuilder();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.thoat = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
@@ -38,11 +40,23 @@
             this.tabControl2 = new System.Windows.Forms.TabControl();
             this.quanlyhocvu = new System.Windows.Forms.TabPage();
             this.thongtingiaovien = new System.Windows.Forms.TabPage();
-            this.thoat = new System.Windows.Forms.Button();
+            this.magv = new System.Windows.Forms.Label();
+            this.hoten = new System.Windows.Forms.Label();
+            this.sdt = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.schoolEdu_DatabaseDataSet = new SchoolEdu.SchoolEdu_DatabaseDataSet();
+            this.schoolEduDatabaseDataSetBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.tabControl2.SuspendLayout();
+            this.thongtingiaovien.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.schoolEdu_DatabaseDataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.schoolEduDatabaseDataSetBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -53,6 +67,16 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(794, 55);
             this.panel1.TabIndex = 0;
+            // 
+            // thoat
+            // 
+            this.thoat.Location = new System.Drawing.Point(715, 27);
+            this.thoat.Name = "thoat";
+            this.thoat.Size = new System.Drawing.Size(75, 23);
+            this.thoat.TabIndex = 3;
+            this.thoat.Text = "Thoát";
+            this.thoat.UseVisualStyleBackColor = true;
+            this.thoat.Click += new System.EventHandler(this.thoat_Click);
             // 
             // panel2
             // 
@@ -126,6 +150,13 @@
             // 
             // thongtingiaovien
             // 
+            this.thongtingiaovien.Controls.Add(this.dataGridView1);
+            this.thongtingiaovien.Controls.Add(this.textBox3);
+            this.thongtingiaovien.Controls.Add(this.textBox2);
+            this.thongtingiaovien.Controls.Add(this.textBox1);
+            this.thongtingiaovien.Controls.Add(this.sdt);
+            this.thongtingiaovien.Controls.Add(this.hoten);
+            this.thongtingiaovien.Controls.Add(this.magv);
             this.thongtingiaovien.Location = new System.Drawing.Point(4, 25);
             this.thongtingiaovien.Name = "thongtingiaovien";
             this.thongtingiaovien.Padding = new System.Windows.Forms.Padding(3);
@@ -134,15 +165,78 @@
             this.thongtingiaovien.Text = "Thông tin giáo viên";
             this.thongtingiaovien.UseVisualStyleBackColor = true;
             // 
-            // thoat
+            // magv
             // 
-            this.thoat.Location = new System.Drawing.Point(715, 27);
-            this.thoat.Name = "thoat";
-            this.thoat.Size = new System.Drawing.Size(75, 23);
-            this.thoat.TabIndex = 3;
-            this.thoat.Text = "Thoát";
-            this.thoat.UseVisualStyleBackColor = true;
-            this.thoat.Click += new System.EventHandler(this.thoat_Click);
+            this.magv.AutoSize = true;
+            this.magv.ForeColor = System.Drawing.Color.Fuchsia;
+            this.magv.Location = new System.Drawing.Point(34, 23);
+            this.magv.Name = "magv";
+            this.magv.Size = new System.Drawing.Size(47, 17);
+            this.magv.TabIndex = 0;
+            this.magv.Text = "MaGV";
+            // 
+            // hoten
+            // 
+            this.hoten.AutoSize = true;
+            this.hoten.ForeColor = System.Drawing.Color.Fuchsia;
+            this.hoten.Location = new System.Drawing.Point(34, 58);
+            this.hoten.Name = "hoten";
+            this.hoten.Size = new System.Drawing.Size(93, 17);
+            this.hoten.TabIndex = 3;
+            this.hoten.Text = "Họ và tên GV";
+            // 
+            // sdt
+            // 
+            this.sdt.AutoSize = true;
+            this.sdt.ForeColor = System.Drawing.Color.Fuchsia;
+            this.sdt.Location = new System.Drawing.Point(395, 23);
+            this.sdt.Name = "sdt";
+            this.sdt.Size = new System.Drawing.Size(36, 17);
+            this.sdt.TabIndex = 4;
+            this.sdt.Text = "SĐT";
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(151, 20);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(128, 22);
+            this.textBox1.TabIndex = 5;
+            // 
+            // textBox2
+            // 
+            this.textBox2.Location = new System.Drawing.Point(151, 52);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(128, 22);
+            this.textBox2.TabIndex = 6;
+            // 
+            // textBox3
+            // 
+            this.textBox3.Location = new System.Drawing.Point(449, 20);
+            this.textBox3.Name = "textBox3";
+            this.textBox3.Size = new System.Drawing.Size(124, 22);
+            this.textBox3.TabIndex = 7;
+            // 
+            // dataGridView1
+            // 
+            this.dataGridView1.AutoGenerateColumns = false;
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.DataSource = this.schoolEduDatabaseDataSetBindingSource;
+            this.dataGridView1.Location = new System.Drawing.Point(37, 188);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.RowHeadersWidth = 51;
+            this.dataGridView1.RowTemplate.Height = 24;
+            this.dataGridView1.Size = new System.Drawing.Size(647, 150);
+            this.dataGridView1.TabIndex = 8;
+            // 
+            // schoolEdu_DatabaseDataSet
+            // 
+            this.schoolEdu_DatabaseDataSet.DataSetName = "SchoolEdu_DatabaseDataSet";
+            this.schoolEdu_DatabaseDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // schoolEduDatabaseDataSetBindingSource
+            // 
+            this.schoolEduDatabaseDataSetBindingSource.DataSource = this.schoolEdu_DatabaseDataSet;
+            this.schoolEduDatabaseDataSetBindingSource.Position = 0;
             // 
             // MainForm_Admin
             // 
@@ -159,6 +253,11 @@
             this.panel2.ResumeLayout(false);
             this.tabControl1.ResumeLayout(false);
             this.tabControl2.ResumeLayout(false);
+            this.thongtingiaovien.ResumeLayout(false);
+            this.thongtingiaovien.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.schoolEdu_DatabaseDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.schoolEduDatabaseDataSetBindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -175,5 +274,14 @@
         private System.Windows.Forms.TabPage quanlyhocvu;
         private System.Windows.Forms.TabPage thongtingiaovien;
         private System.Windows.Forms.Button thoat;
+        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.BindingSource schoolEduDatabaseDataSetBindingSource;
+        private SchoolEdu_DatabaseDataSet schoolEdu_DatabaseDataSet;
+        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Label sdt;
+        private System.Windows.Forms.Label hoten;
+        private System.Windows.Forms.Label magv;
     }
 }
