@@ -22,6 +22,7 @@ namespace SchoolEdu
         }
         string dangkyhoc1 = "Data Source=172.188.28.154;Initial Catalog=SchoolEdu_Database;User ID=buimanhduc-database;Password=Buim@nhducsql2024";
         SqlConnection conn = new SqlConnection();
+        private string ma;
         private void dangkyhoc_Load(object sender, EventArgs e)
         {
             panel1.BackColor = Color.FromArgb(90, 0, 0, 0);
@@ -58,6 +59,7 @@ namespace SchoolEdu
         }
         public void gettinhoc(string tinhoc)
         {
+            ma = tinhoc;
             SqlConnection sqlConnection = new SqlConnection(dangkyhoc1);
             sqlConnection.Open();
             string sql = "Select * from SVMH where MaSV = @SV";
@@ -91,9 +93,9 @@ namespace SchoolEdu
             data = dataGridView4.Rows[e.RowIndex];
             DataGridViewRow data1 = new DataGridViewRow();
             data1 = dataGridView2.Rows[e.RowIndex];
-            DataGridViewRow data2 = new DataGridViewRow();
-            data2 = dataGridView1.Rows[e.RowIndex];
-            string ma = Convert.ToString(data2.Cells[0].Value);
+            //DataGridViewRow data2 = new DataGridViewRow();
+            //data2 = dataGridView1.Rows[e.RowIndex];
+            //string ma = Convert.ToString(data2.Cells[0].Value);
             SqlConnection sqlConnection = new SqlConnection(dangkyhoc1);
             sqlConnection.Open();
 
