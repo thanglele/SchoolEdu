@@ -45,7 +45,7 @@ namespace SchoolEdu
 
         private void đổiMậtKhẩuToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Main.SelectedIndex = 6;
+            Main.SelectedIndex = 3;
         }
 
         private void Change_Password_task()
@@ -257,14 +257,9 @@ namespace SchoolEdu
             Main.SelectedIndex = 3;
         }
 
-        private void Button_Ketquadangkyhocsv_Click(object sender, EventArgs e)
-        {
-            Main.SelectedIndex = 4;
-        }
-
         private void Button_QLdaotao_Click(object sender, EventArgs e)
         {
-            Main.SelectedIndex = 5;
+            Main.SelectedIndex = 4;
         }
 
         private void F5_Click(object sender, EventArgs e)
