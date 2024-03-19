@@ -17,12 +17,14 @@ namespace SchoolEdu
             InitializeComponent();
         }
 
+        
+        
         string chuoiketnoi = @"Data Source=172.188.28.154;Initial Catalog=SchoolEdu_Database;Persist Security Info=True;User ID=lethanhluong-database;Password=***********";
         SqlConnection ketnoi;
         SqlCommand thuchien;
         SqlDataReader docdulieu;
         int i = 0;
-
+        
         private void menuStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
         {
 
@@ -69,12 +71,57 @@ namespace SchoolEdu
             
         }
 
+        string taikhoangiaovien = " ";
         private void them_Click(object sender, EventArgs e)
         {
-            
+            /*
+            if(taikhoangiaovien.Equals("admin") || taikhoangiaovien.Equals("user"))
+            {
+                txt_ txt_MaGV.Enabled = true;
+                txt_ txt_TenGV.Enabled = true;
+                txt_ txt_NgaySinh.Enabled = true;
+                txt_ txt_DiaChi.Enabled = true;
 
-                
+            }
+            else
+            {
+                MessageBox.Show("Bạn Không Có Quyền Sử Dụng Chức Năng Này", "Thông Báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            */
+
+        
+        }
+
+        private void xoa_Click(object sender, EventArgs e)
+        {
+            /*
+            if (taikhoangiaovien.Equals("admin") || taikhoangiaovien.Equals("user"))
+            {
+                txt_ txt_MaGV.Enabled = false;
+                txt_ txt_TenGV.Enabled = false;
+                txt_ txt_NgaySinh.Enabled = false;
+                txt_ txt_DiaChi.Enabled = false;
+            }
+            else
+            {
+                MessageBox.Show("Bạn Không Có Quyền Sử Dụng Chức Năng Này", "Thông Báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            */
 
         }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            /*
+            int i;
+            i = dataGridView1.CurrentRow.Index;
+            txt_ txt_MaGV.Text = dataGridView1.Rows[i].Cells["MaGV"].Value.ToString();
+            txt_ txt_TenGV.Text = dataGridView1.Rows[i].Cells["TenGV"].Value.ToString();
+            txt_ txt_NgaySinh.Text = dataGridView1.Rows[i].Cells["NgaySinh"].Value.ToString();
+            txt_ txt_DiaChi.Text = dataGridView1.Rows[i].Cells["DiaChi"].Value.ToString();
+            */
+        }
+        
     }
+        
 }

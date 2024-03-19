@@ -209,6 +209,7 @@
             this.xoa.TabIndex = 13;
             this.xoa.Text = "Xóa";
             this.xoa.UseVisualStyleBackColor = true;
+            this.xoa.Click += new System.EventHandler(this.xoa_Click);
             // 
             // sua
             // 
@@ -239,13 +240,14 @@
             this.dataGridViewTextBoxColumn1,
             this.DiaChi});
             this.dataGridView1.DataSource = this.gIAOVIENBindingSource1;
-            this.dataGridView1.Location = new System.Drawing.Point(55, 169);
+            this.dataGridView1.Location = new System.Drawing.Point(86, 167);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(553, 150);
+            this.dataGridView1.Size = new System.Drawing.Size(555, 150);
             this.dataGridView1.TabIndex = 10;
+            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // dataSet4BindingSource
             // 
