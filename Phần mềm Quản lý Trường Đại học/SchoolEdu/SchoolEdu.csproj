@@ -153,14 +153,6 @@
     <Compile Include="dangkyhoc.Designer.cs">
       <DependentUpon>dangkyhoc.cs</DependentUpon>
     </Compile>
-    <Compile Include="DataSet4.cs">
-      <DependentUpon>DataSet4.xsd</DependentUpon>
-    </Compile>
-    <Compile Include="DataSet4.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>DataSet4.xsd</DependentUpon>
-    </Compile>
     <Compile Include="Login_Form.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -276,6 +268,7 @@
       <DependentUpon>Thongtinsinhvien.cs</DependentUpon>
     </EmbeddedResource>
 <<<<<<< HEAD
+<<<<<<< HEAD
     <EmbeddedResource Include="tonggpa.resx">
       <DependentUpon>tonggpa.cs</DependentUpon>
     </EmbeddedResource>
@@ -292,6 +285,8 @@
       <DependentUpon>DataSet4.xsd</DependentUpon>
     </None>
 >>>>>>> origin/Leluong-a
+=======
+>>>>>>> parent of c19146e (admin_a)
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
