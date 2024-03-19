@@ -70,9 +70,9 @@ namespace QLSINHVIEN
             this.panel1.Controls.Add(this.bt_SinhVien);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(247, 458);
+            this.panel1.Size = new System.Drawing.Size(185, 372);
             this.panel1.TabIndex = 0;
             // 
             // bt_Thoat
@@ -83,10 +83,10 @@ namespace QLSINHVIEN
             this.bt_Thoat.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bt_Thoat.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold);
             this.bt_Thoat.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.bt_Thoat.Location = new System.Drawing.Point(0, 407);
-            this.bt_Thoat.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.bt_Thoat.Location = new System.Drawing.Point(0, 331);
+            this.bt_Thoat.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.bt_Thoat.Name = "bt_Thoat";
-            this.bt_Thoat.Size = new System.Drawing.Size(247, 51);
+            this.bt_Thoat.Size = new System.Drawing.Size(185, 41);
             this.bt_Thoat.TabIndex = 12;
             this.bt_Thoat.Text = "Thoát";
             this.bt_Thoat.UseVisualStyleBackColor = false;
@@ -95,30 +95,30 @@ namespace QLSINHVIEN
             // pn_SV
             // 
             this.pn_SV.BackColor = System.Drawing.Color.Blue;
-            this.pn_SV.Location = new System.Drawing.Point(0, 159);
-            this.pn_SV.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pn_SV.Location = new System.Drawing.Point(0, 129);
+            this.pn_SV.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pn_SV.Name = "pn_SV";
-            this.pn_SV.Size = new System.Drawing.Size(15, 44);
+            this.pn_SV.Size = new System.Drawing.Size(11, 36);
             this.pn_SV.TabIndex = 2;
             this.pn_SV.Visible = false;
             // 
             // pn_Lop
             // 
             this.pn_Lop.BackColor = System.Drawing.Color.Blue;
-            this.pn_Lop.Location = new System.Drawing.Point(0, 204);
-            this.pn_Lop.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pn_Lop.Location = new System.Drawing.Point(0, 166);
+            this.pn_Lop.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pn_Lop.Name = "pn_Lop";
-            this.pn_Lop.Size = new System.Drawing.Size(15, 48);
+            this.pn_Lop.Size = new System.Drawing.Size(11, 39);
             this.pn_Lop.TabIndex = 1;
             this.pn_Lop.Visible = false;
             // 
             // pictureBox3
             // 
             this.pictureBox3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.pictureBox3.Location = new System.Drawing.Point(21, 208);
-            this.pictureBox3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pictureBox3.Location = new System.Drawing.Point(16, 169);
+            this.pictureBox3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(48, 34);
+            this.pictureBox3.Size = new System.Drawing.Size(36, 28);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox3.TabIndex = 10;
             this.pictureBox3.TabStop = false;
@@ -126,10 +126,10 @@ namespace QLSINHVIEN
             // pictureBox2
             // 
             this.pictureBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.pictureBox2.Location = new System.Drawing.Point(21, 164);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pictureBox2.Location = new System.Drawing.Point(16, 133);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(48, 34);
+            this.pictureBox2.Size = new System.Drawing.Size(36, 28);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox2.TabIndex = 9;
             this.pictureBox2.TabStop = false;
@@ -140,10 +140,10 @@ namespace QLSINHVIEN
             this.bt_Lop.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.bt_Lop.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bt_Lop.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold);
-            this.bt_Lop.Location = new System.Drawing.Point(0, 203);
-            this.bt_Lop.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.bt_Lop.Location = new System.Drawing.Point(0, 165);
+            this.bt_Lop.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.bt_Lop.Name = "bt_Lop";
-            this.bt_Lop.Size = new System.Drawing.Size(250, 50);
+            this.bt_Lop.Size = new System.Drawing.Size(188, 41);
             this.bt_Lop.TabIndex = 6;
             this.bt_Lop.Text = "Lớp";
             this.bt_Lop.UseVisualStyleBackColor = false;
@@ -158,9 +158,9 @@ namespace QLSINHVIEN
             this.panel2.Controls.Add(this.pictureBox1);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(0, 0);
-            this.panel2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.panel2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(247, 160);
+            this.panel2.Size = new System.Drawing.Size(185, 130);
             this.panel2.TabIndex = 3;
             // 
             // bt_DangXuat
@@ -170,9 +170,9 @@ namespace QLSINHVIEN
             this.bt_DangXuat.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
             this.bt_DangXuat.ForeColor = System.Drawing.Color.Ivory;
             this.bt_DangXuat.Location = new System.Drawing.Point(0, 0);
-            this.bt_DangXuat.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.bt_DangXuat.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.bt_DangXuat.Name = "bt_DangXuat";
-            this.bt_DangXuat.Size = new System.Drawing.Size(106, 32);
+            this.bt_DangXuat.Size = new System.Drawing.Size(80, 26);
             this.bt_DangXuat.TabIndex = 0;
             this.bt_DangXuat.Text = "Đăng Xuất";
             this.bt_DangXuat.UseVisualStyleBackColor = false;
@@ -188,21 +188,21 @@ namespace QLSINHVIEN
             this.lb_TenTK.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.lb_TenTK.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
             this.lb_TenTK.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lb_TenTK.Location = new System.Drawing.Point(49, 133);
+            this.lb_TenTK.Location = new System.Drawing.Point(37, 108);
+            this.lb_TenTK.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lb_TenTK.Name = "lb_TenTK";
-            this.lb_TenTK.Size = new System.Drawing.Size(138, 28);
+            this.lb_TenTK.Size = new System.Drawing.Size(108, 21);
             this.lb_TenTK.TabIndex = 1;
             this.lb_TenTK.Text = "Tên Tài Khoản";
             // 
             // pictureBox1
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.pictureBox1.BackgroundImage = global::QLSINHVIEN.Properties.Resources.accounticon;
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox1.Location = new System.Drawing.Point(0, 37);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pictureBox1.Location = new System.Drawing.Point(0, 30);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(250, 88);
+            this.pictureBox1.Size = new System.Drawing.Size(188, 72);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
@@ -214,10 +214,10 @@ namespace QLSINHVIEN
             this.bt_SinhVien.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bt_SinhVien.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold);
             this.bt_SinhVien.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.bt_SinhVien.Location = new System.Drawing.Point(0, 154);
-            this.bt_SinhVien.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.bt_SinhVien.Location = new System.Drawing.Point(0, 125);
+            this.bt_SinhVien.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.bt_SinhVien.Name = "bt_SinhVien";
-            this.bt_SinhVien.Size = new System.Drawing.Size(250, 50);
+            this.bt_SinhVien.Size = new System.Drawing.Size(188, 41);
             this.bt_SinhVien.TabIndex = 4;
             this.bt_SinhVien.Text = "Sinh Viên";
             this.bt_SinhVien.UseVisualStyleBackColor = false;
@@ -227,9 +227,9 @@ namespace QLSINHVIEN
             // 
             this.pictureBox6.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox6.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pictureBox6.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(53, 32);
+            this.pictureBox6.Size = new System.Drawing.Size(40, 26);
             this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox6.TabIndex = 2;
             this.pictureBox6.TabStop = false;
@@ -241,10 +241,10 @@ namespace QLSINHVIEN
             this.panel3.Controls.Add(this.pictureBox6);
             this.panel3.Controls.Add(this.label2);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel3.Location = new System.Drawing.Point(247, 0);
-            this.panel3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.panel3.Location = new System.Drawing.Point(185, 0);
+            this.panel3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(889, 159);
+            this.panel3.Size = new System.Drawing.Size(667, 129);
             this.panel3.TabIndex = 1;
             // 
             // label2
@@ -253,9 +253,10 @@ namespace QLSINHVIEN
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Times New Roman", 34.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
             this.label2.ForeColor = System.Drawing.Color.Cyan;
-            this.label2.Location = new System.Drawing.Point(121, 49);
+            this.label2.Location = new System.Drawing.Point(91, 40);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(593, 65);
+            this.label2.Size = new System.Drawing.Size(469, 52);
             this.label2.TabIndex = 0;
             this.label2.Text = "QUẢN LÝ SINH VIÊN";
             // 
@@ -263,35 +264,35 @@ namespace QLSINHVIEN
             // 
             this.panel_body.Controls.Add(this.pictureBox5);
             this.panel_body.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel_body.Location = new System.Drawing.Point(247, 159);
-            this.panel_body.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.panel_body.Location = new System.Drawing.Point(185, 129);
+            this.panel_body.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel_body.Name = "panel_body";
-            this.panel_body.Size = new System.Drawing.Size(889, 299);
+            this.panel_body.Size = new System.Drawing.Size(667, 243);
             this.panel_body.TabIndex = 2;
             // 
             // pictureBox5
             // 
             this.pictureBox5.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pictureBox5.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pictureBox5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(889, 299);
+            this.pictureBox5.Size = new System.Drawing.Size(667, 243);
             this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox5.TabIndex = 0;
             this.pictureBox5.TabStop = false;
             // 
             // frm_GiaoDien
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.ClientSize = new System.Drawing.Size(1136, 458);
+            this.ClientSize = new System.Drawing.Size(852, 372);
             this.ControlBox = false;
             this.Controls.Add(this.panel_body);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
-            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "frm_GiaoDien";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.frm_GiaoDien_Load);

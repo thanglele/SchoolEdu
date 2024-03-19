@@ -57,9 +57,7 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
-    <Compile Include="GUI\frm_ChiTiet.cs">
-      <SubType>Form</SubType>
-    </Compile>
+    <Compile Include="GUI\frm_ChiTiet.cs" />
     <Compile Include="GUI\frm_ChiTiet.Designer.cs">
       <DependentUpon>frm_ChiTiet.cs</DependentUpon>
     </Compile>
@@ -69,15 +67,11 @@
     <Compile Include="GUI\frm_GiaoDien.Designer.cs">
       <DependentUpon>frm_GiaoDien.cs</DependentUpon>
     </Compile>
-    <Compile Include="GUI\frm_Lop.cs">
-      <SubType>Form</SubType>
-    </Compile>
+    <Compile Include="GUI\frm_Lop.cs" />
     <Compile Include="GUI\frm_Lop.designer.cs">
       <DependentUpon>frm_Lop.cs</DependentUpon>
     </Compile>
-    <Compile Include="GUI\frm_SinhVien.cs">
-      <SubType>Form</SubType>
-    </Compile>
+    <Compile Include="GUI\frm_SinhVien.cs" />
     <Compile Include="GUI\frm_SinhVien.designer.cs">
       <DependentUpon>frm_SinhVien.cs</DependentUpon>
     </Compile>
