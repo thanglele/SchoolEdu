@@ -207,6 +207,16 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>SchoolEdu_DatabaseDataSet3.xsd</DependentUpon>
     </Compile>
+    <Compile Include="SchoolEdu_DatabaseDataSet41.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SchoolEdu_DatabaseDataSet41.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="SchoolEdu_DatabaseDataSet51.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SchoolEdu_DatabaseDataSet51.xsd</DependentUpon>
+    </Compile>
     <Compile Include="sinhvien.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -323,6 +333,28 @@
     </None>
     <None Include="SchoolEdu_DatabaseDataSet3.xss">
       <DependentUpon>SchoolEdu_DatabaseDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="SchoolEdu_DatabaseDataSet41.xsc">
+      <DependentUpon>SchoolEdu_DatabaseDataSet41.xsd</DependentUpon>
+    </None>
+    <None Include="SchoolEdu_DatabaseDataSet41.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SchoolEdu_DatabaseDataSet41.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="SchoolEdu_DatabaseDataSet41.xss">
+      <DependentUpon>SchoolEdu_DatabaseDataSet41.xsd</DependentUpon>
+    </None>
+    <None Include="SchoolEdu_DatabaseDataSet51.xsc">
+      <DependentUpon>SchoolEdu_DatabaseDataSet51.xsd</DependentUpon>
+    </None>
+    <None Include="SchoolEdu_DatabaseDataSet51.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SchoolEdu_DatabaseDataSet51.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="SchoolEdu_DatabaseDataSet51.xss">
+      <DependentUpon>SchoolEdu_DatabaseDataSet51.xsd</DependentUpon>
     </None>
   </ItemGroup>
   <ItemGroup>

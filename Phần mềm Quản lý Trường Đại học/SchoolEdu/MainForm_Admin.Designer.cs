@@ -40,7 +40,12 @@
             this.tabControl2 = new System.Windows.Forms.TabControl();
             this.quanlyhocvu = new System.Windows.Forms.TabPage();
             this.thongtingiaovien = new System.Windows.Forms.TabPage();
+            this.xoa = new System.Windows.Forms.Button();
+            this.sua = new System.Windows.Forms.Button();
+            this.them = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dataSet4BindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.dataSet4 = new SchoolEdu.DataSet4();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.điachi = new System.Windows.Forms.Label();
             this.textBox3 = new System.Windows.Forms.TextBox();
@@ -54,30 +59,35 @@
             this.schoolEdu_DatabaseDataSet1 = new SchoolEdu.SchoolEdu_DatabaseDataSet();
             this.dataSet41BindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.dataSet41 = new SchoolEdu.DataSet4();
-            this.dataSet4BindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.dataSet4 = new SchoolEdu.DataSet4();
             this.dataSet4BindingSource1 = new System.Windows.Forms.BindingSource(this.components);
-            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.them = new System.Windows.Forms.Button();
-            this.sua = new System.Windows.Forms.Button();
-            this.xoa = new System.Windows.Forms.Button();
+            this.schoolEdu_DatabaseDataSet4 = new SchoolEdu.SchoolEdu_DatabaseDataSet4();
+            this.gIAOVIENBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.gIAOVIENTableAdapter = new SchoolEdu.SchoolEdu_DatabaseDataSet4TableAdapters.GIAOVIENTableAdapter();
+            this.schoolEdu_DatabaseDataSet5 = new SchoolEdu.SchoolEdu_DatabaseDataSet5();
+            this.gIAOVIENBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.gIAOVIENTableAdapter1 = new SchoolEdu.SchoolEdu_DatabaseDataSet5TableAdapters.GIAOVIENTableAdapter();
+            this.maGVDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tenGVDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.DiaChi = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.tabControl2.SuspendLayout();
             this.thongtingiaovien.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataSet4BindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataSet4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.schoolEduDatabaseDataSetBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.schoolEdu_DatabaseDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.schoolEdu_DatabaseDataSet1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataSet41BindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataSet41)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataSet4BindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataSet4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataSet4BindingSource1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.schoolEdu_DatabaseDataSet4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gIAOVIENBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.schoolEdu_DatabaseDataSet5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gIAOVIENBindingSource1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -191,26 +201,66 @@
             this.thongtingiaovien.Text = "Thông tin giáo viên";
             this.thongtingiaovien.UseVisualStyleBackColor = true;
             // 
+            // xoa
+            // 
+            this.xoa.Location = new System.Drawing.Point(533, 123);
+            this.xoa.Name = "xoa";
+            this.xoa.Size = new System.Drawing.Size(75, 23);
+            this.xoa.TabIndex = 13;
+            this.xoa.Text = "Xóa";
+            this.xoa.UseVisualStyleBackColor = true;
+            // 
+            // sua
+            // 
+            this.sua.Location = new System.Drawing.Point(447, 123);
+            this.sua.Name = "sua";
+            this.sua.Size = new System.Drawing.Size(75, 23);
+            this.sua.TabIndex = 12;
+            this.sua.Text = "Sửa";
+            this.sua.UseVisualStyleBackColor = true;
+            // 
+            // them
+            // 
+            this.them.Location = new System.Drawing.Point(358, 123);
+            this.them.Name = "them";
+            this.them.Size = new System.Drawing.Size(75, 23);
+            this.them.TabIndex = 11;
+            this.them.Text = "Thêm";
+            this.them.UseVisualStyleBackColor = true;
+            this.them.Click += new System.EventHandler(this.them_Click);
+            // 
             // dataGridView1
             // 
             this.dataGridView1.AutoGenerateColumns = false;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.Column1,
-            this.Column2,
-            this.Column3,
-            this.Column4});
-            this.dataGridView1.DataSource = this.dataSet4BindingSource;
+            this.maGVDataGridViewTextBoxColumn,
+            this.tenGVDataGridViewTextBoxColumn,
+            this.dataGridViewTextBoxColumn1,
+            this.DiaChi});
+            this.dataGridView1.DataSource = this.gIAOVIENBindingSource1;
             this.dataGridView1.Location = new System.Drawing.Point(55, 169);
             this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.ReadOnly = true;
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
             this.dataGridView1.Size = new System.Drawing.Size(553, 150);
             this.dataGridView1.TabIndex = 10;
             // 
+            // dataSet4BindingSource
+            // 
+            this.dataSet4BindingSource.DataSource = this.dataSet4;
+            this.dataSet4BindingSource.Position = 0;
+            // 
+            // dataSet4
+            // 
+            this.dataSet4.DataSetName = "DataSet4";
+            this.dataSet4.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
             // comboBox1
             // 
-            this.comboBox1.DataSource = this.dataSet4BindingSource;
+            this.comboBox1.DataSource = this.gIAOVIENBindingSource;
+            this.comboBox1.DisplayMember = "DiaChi";
             this.comboBox1.FormattingEnabled = true;
             this.comboBox1.Location = new System.Drawing.Point(447, 52);
             this.comboBox1.Name = "comboBox1";
@@ -305,76 +355,74 @@
             this.dataSet41.DataSetName = "DataSet4";
             this.dataSet41.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
-            // dataSet4BindingSource
-            // 
-            this.dataSet4BindingSource.DataSource = this.dataSet4;
-            this.dataSet4BindingSource.Position = 0;
-            // 
-            // dataSet4
-            // 
-            this.dataSet4.DataSetName = "DataSet4";
-            this.dataSet4.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
             // dataSet4BindingSource1
             // 
             this.dataSet4BindingSource1.DataSource = this.dataSet4;
             this.dataSet4BindingSource1.Position = 0;
             // 
-            // Column1
+            // schoolEdu_DatabaseDataSet4
             // 
-            this.Column1.HeaderText = "MaGV";
-            this.Column1.MinimumWidth = 6;
-            this.Column1.Name = "Column1";
-            this.Column1.Width = 125;
+            this.schoolEdu_DatabaseDataSet4.DataSetName = "SchoolEdu_DatabaseDataSet4";
+            this.schoolEdu_DatabaseDataSet4.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
-            // Column2
+            // gIAOVIENBindingSource
             // 
-            this.Column2.HeaderText = "Họ và tên";
-            this.Column2.MinimumWidth = 6;
-            this.Column2.Name = "Column2";
-            this.Column2.Width = 125;
+            this.gIAOVIENBindingSource.DataMember = "GIAOVIEN";
+            this.gIAOVIENBindingSource.DataSource = this.schoolEdu_DatabaseDataSet4;
             // 
-            // Column3
+            // gIAOVIENTableAdapter
             // 
-            this.Column3.HeaderText = "Ngày sinh";
-            this.Column3.MinimumWidth = 6;
-            this.Column3.Name = "Column3";
-            this.Column3.Width = 125;
+            this.gIAOVIENTableAdapter.ClearBeforeFill = true;
             // 
-            // Column4
+            // schoolEdu_DatabaseDataSet5
             // 
-            this.Column4.HeaderText = "Địa chỉ";
-            this.Column4.MinimumWidth = 6;
-            this.Column4.Name = "Column4";
-            this.Column4.Width = 125;
+            this.schoolEdu_DatabaseDataSet5.DataSetName = "SchoolEdu_DatabaseDataSet5";
+            this.schoolEdu_DatabaseDataSet5.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
-            // them
+            // gIAOVIENBindingSource1
             // 
-            this.them.Location = new System.Drawing.Point(358, 123);
-            this.them.Name = "them";
-            this.them.Size = new System.Drawing.Size(75, 23);
-            this.them.TabIndex = 11;
-            this.them.Text = "Thêm";
-            this.them.UseVisualStyleBackColor = true;
-            this.them.Click += new System.EventHandler(this.them_Click);
+            this.gIAOVIENBindingSource1.DataMember = "GIAOVIEN";
+            this.gIAOVIENBindingSource1.DataSource = this.schoolEdu_DatabaseDataSet5;
             // 
-            // sua
+            // gIAOVIENTableAdapter1
             // 
-            this.sua.Location = new System.Drawing.Point(447, 123);
-            this.sua.Name = "sua";
-            this.sua.Size = new System.Drawing.Size(75, 23);
-            this.sua.TabIndex = 12;
-            this.sua.Text = "Sửa";
-            this.sua.UseVisualStyleBackColor = true;
+            this.gIAOVIENTableAdapter1.ClearBeforeFill = true;
             // 
-            // xoa
+            // maGVDataGridViewTextBoxColumn
             // 
-            this.xoa.Location = new System.Drawing.Point(533, 123);
-            this.xoa.Name = "xoa";
-            this.xoa.Size = new System.Drawing.Size(75, 23);
-            this.xoa.TabIndex = 13;
-            this.xoa.Text = "Xóa";
-            this.xoa.UseVisualStyleBackColor = true;
+            this.maGVDataGridViewTextBoxColumn.DataPropertyName = "MaGV";
+            this.maGVDataGridViewTextBoxColumn.HeaderText = "MaGV";
+            this.maGVDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.maGVDataGridViewTextBoxColumn.Name = "maGVDataGridViewTextBoxColumn";
+            this.maGVDataGridViewTextBoxColumn.ReadOnly = true;
+            this.maGVDataGridViewTextBoxColumn.Width = 125;
+            // 
+            // tenGVDataGridViewTextBoxColumn
+            // 
+            this.tenGVDataGridViewTextBoxColumn.DataPropertyName = "TenGV";
+            this.tenGVDataGridViewTextBoxColumn.HeaderText = "TenGV";
+            this.tenGVDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.tenGVDataGridViewTextBoxColumn.Name = "tenGVDataGridViewTextBoxColumn";
+            this.tenGVDataGridViewTextBoxColumn.ReadOnly = true;
+            this.tenGVDataGridViewTextBoxColumn.Width = 125;
+            // 
+            // dataGridViewTextBoxColumn1
+            // 
+            this.dataGridViewTextBoxColumn1.DataPropertyName = "NgaySinh";
+            this.dataGridViewTextBoxColumn1.HeaderText = "NgaySinh";
+            this.dataGridViewTextBoxColumn1.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
+            this.dataGridViewTextBoxColumn1.ReadOnly = true;
+            this.dataGridViewTextBoxColumn1.Width = 125;
+            // 
+            // DiaChi
+            // 
+            this.DiaChi.DataPropertyName = "DiaChi";
+            this.DiaChi.HeaderText = "DiaChi";
+            this.DiaChi.MinimumWidth = 6;
+            this.DiaChi.Name = "DiaChi";
+            this.DiaChi.ReadOnly = true;
+            this.DiaChi.Width = 125;
             // 
             // MainForm_Admin
             // 
@@ -394,14 +442,18 @@
             this.thongtingiaovien.ResumeLayout(false);
             this.thongtingiaovien.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataSet4BindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataSet4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.schoolEduDatabaseDataSetBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.schoolEdu_DatabaseDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.schoolEdu_DatabaseDataSet1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataSet41BindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataSet41)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataSet4BindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataSet4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataSet4BindingSource1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.schoolEdu_DatabaseDataSet4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gIAOVIENBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.schoolEdu_DatabaseDataSet5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gIAOVIENBindingSource1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -435,12 +487,18 @@
         private System.Windows.Forms.BindingSource dataSet4BindingSource1;
         private System.Windows.Forms.BindingSource dataSet41BindingSource;
         private DataSet4 dataSet41;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
         private System.Windows.Forms.Button xoa;
         private System.Windows.Forms.Button sua;
         private System.Windows.Forms.Button them;
+        private SchoolEdu_DatabaseDataSet4 schoolEdu_DatabaseDataSet4;
+        private System.Windows.Forms.BindingSource gIAOVIENBindingSource;
+        private SchoolEdu_DatabaseDataSet4TableAdapters.GIAOVIENTableAdapter gIAOVIENTableAdapter;
+        private SchoolEdu_DatabaseDataSet5 schoolEdu_DatabaseDataSet5;
+        private System.Windows.Forms.BindingSource gIAOVIENBindingSource1;
+        private SchoolEdu_DatabaseDataSet5TableAdapters.GIAOVIENTableAdapter gIAOVIENTableAdapter1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn maGVDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn tenGVDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn DiaChi;
     }
 }

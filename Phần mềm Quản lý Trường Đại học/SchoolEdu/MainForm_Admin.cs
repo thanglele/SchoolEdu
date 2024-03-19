@@ -35,7 +35,11 @@ namespace SchoolEdu
 
         private void MainForm_Admin_Load(object sender, EventArgs e)
         {
-            
+            // TODO: This line of code loads data into the 'schoolEdu_DatabaseDataSet5.GIAOVIEN' table. You can move, or remove it, as needed.
+            this.gIAOVIENTableAdapter1.Fill(this.schoolEdu_DatabaseDataSet5.GIAOVIEN);
+            // TODO: This line of code loads data into the 'schoolEdu_DatabaseDataSet4.GIAOVIEN' table. You can move, or remove it, as needed.
+            this.gIAOVIENTableAdapter.Fill(this.schoolEdu_DatabaseDataSet4.GIAOVIEN);
+
             ketnoi = new SqlConnection(chuoiketnoi);
 
         }
