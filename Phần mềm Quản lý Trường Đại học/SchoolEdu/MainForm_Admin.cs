@@ -43,7 +43,6 @@ namespace SchoolEdu
             this.Close();
             Application.Exit();
         }
-<<<<<<< HEAD
 
      
 
@@ -65,7 +64,5 @@ namespace SchoolEdu
                 
 
         }
-=======
->>>>>>> parent of c19146e (admin_a)
     }
 }
