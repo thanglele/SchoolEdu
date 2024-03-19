@@ -267,26 +267,9 @@
     <EmbeddedResource Include="Thongtinsinhvien.resx">
       <DependentUpon>Thongtinsinhvien.cs</DependentUpon>
     </EmbeddedResource>
-<<<<<<< HEAD
-<<<<<<< HEAD
     <EmbeddedResource Include="tonggpa.resx">
       <DependentUpon>tonggpa.cs</DependentUpon>
     </EmbeddedResource>
-=======
-    <None Include="DataSet4.xsc">
-      <DependentUpon>DataSet4.xsd</DependentUpon>
-    </None>
-    <None Include="DataSet4.xsd">
-      <SubType>Designer</SubType>
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>DataSet4.Designer.cs</LastGenOutput>
-    </None>
-    <None Include="DataSet4.xss">
-      <DependentUpon>DataSet4.xsd</DependentUpon>
-    </None>
->>>>>>> origin/Leluong-a
-=======
->>>>>>> parent of c19146e (admin_a)
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
