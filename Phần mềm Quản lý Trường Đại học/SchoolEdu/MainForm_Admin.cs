@@ -44,6 +44,8 @@ namespace SchoolEdu
 
             ketnoi = new SqlConnection(chuoiketnoi);
 
+            
+
         }
 
         private void thêmToolStripMenuItem_Click(object sender, EventArgs e)
@@ -121,6 +123,60 @@ namespace SchoolEdu
             txt_ txt_DiaChi.Text = dataGridView1.Rows[i].Cells["DiaChi"].Value.ToString();
             */
         }
+
+        private void sua_Click(object sender, EventArgs e)
+        {
+            /*
+            if(taikhoangiaovien.Equals("admin") || taikhoangiaovien.Equals("user"))
+            {
+                txt_ txt_MaGV.Enabled = true;
+                txt_ txt_TenGV.Enabled = true;
+                txt_ txt_NgaySinh.Enabled = true;
+                txt_ txt_DiaChi.Enabled = true;
+                if (string.IsNullOrEmpty(txt_MaGV.Text))
+                {
+                    MessageBox.Show("Chưa Nhập Giáo Viên Cần Sửa");
+                }
+                else
+                {
+                    MessageBox.Show("Sửa Thành Công");
+                }
+            }
+            else
+            {
+                MessageBox.Show("Bạn Không Có Quyền Sử Dụng Chức Năng Này", "Thông Báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            */
+        }
+
+        private void luu_Click(object sender, EventArgs e)
+        {
+            /*
+            if (taikhoangiaovien.Equals("admin") || taikhoangiaovien.Equals("user"))
+            {
+                if (string.IsNullOrEmpty(txt_MaGV.Text))
+                {
+                    MessageBox.Show("Chưa Nhập Mã Giáo Viên");
+                }
+                else
+                {
+                    try
+                    {
+                        MessageBox.Show("Thêm Thành Công");
+                    }
+                    catch (Exception)
+                    {
+                        MessageBox.Show("Đã Tồn Tại Mã Giáo Viên");
+                    }
+                }
+            }
+            else
+            {
+                MessageBox.Show("Bạn Không Có Quyền Sử Dụng Chức Năng Này", "Thông Báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            */
+        }
+            
         
     }
         
