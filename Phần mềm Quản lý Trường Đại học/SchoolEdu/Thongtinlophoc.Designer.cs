@@ -39,9 +39,9 @@
             this.lOPBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.schoolEdu_DatabaseDataSet3 = new SchoolEdu.SchoolEdu_DatabaseDataSet3();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.lOPTableAdapter = new SchoolEdu.SchoolEdu_DatabaseDataSet3TableAdapters.LOPTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -52,10 +52,6 @@
             // 
             // dataGridView1
             // 
-            this.dataGridView1.AllowUserToAddRows = false;
-            this.dataGridView1.AllowUserToDeleteRows = false;
-            this.dataGridView1.AllowUserToResizeColumns = false;
-            this.dataGridView1.AllowUserToResizeRows = false;
             this.dataGridView1.AutoGenerateColumns = false;
             this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
@@ -67,46 +63,47 @@
             this.maGVDataGridViewTextBoxColumn});
             this.dataGridView1.DataSource = this.lOPBindingSource;
             this.dataGridView1.Enabled = false;
-            this.dataGridView1.Location = new System.Drawing.Point(55, 217);
+            this.dataGridView1.Location = new System.Drawing.Point(5, 176);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.ReadOnly = true;
-            this.dataGridView1.Size = new System.Drawing.Size(1039, 334);
+            this.dataGridView1.RowHeadersWidth = 51;
+            this.dataGridView1.Size = new System.Drawing.Size(1081, 276);
             this.dataGridView1.TabIndex = 0;
             // 
             // maLopDataGridViewTextBoxColumn
             // 
             this.maLopDataGridViewTextBoxColumn.DataPropertyName = "MaLop";
             this.maLopDataGridViewTextBoxColumn.HeaderText = "MaLop";
+            this.maLopDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.maLopDataGridViewTextBoxColumn.Name = "maLopDataGridViewTextBoxColumn";
-            this.maLopDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // khoaDataGridViewTextBoxColumn
             // 
             this.khoaDataGridViewTextBoxColumn.DataPropertyName = "Khoa";
             this.khoaDataGridViewTextBoxColumn.HeaderText = "Khoa";
+            this.khoaDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.khoaDataGridViewTextBoxColumn.Name = "khoaDataGridViewTextBoxColumn";
-            this.khoaDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // nganhDataGridViewTextBoxColumn
             // 
             this.nganhDataGridViewTextBoxColumn.DataPropertyName = "Nganh";
             this.nganhDataGridViewTextBoxColumn.HeaderText = "Nganh";
+            this.nganhDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.nganhDataGridViewTextBoxColumn.Name = "nganhDataGridViewTextBoxColumn";
-            this.nganhDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // nienkhoaDataGridViewTextBoxColumn
             // 
             this.nienkhoaDataGridViewTextBoxColumn.DataPropertyName = "Nienkhoa";
             this.nienkhoaDataGridViewTextBoxColumn.HeaderText = "Nienkhoa";
+            this.nienkhoaDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.nienkhoaDataGridViewTextBoxColumn.Name = "nienkhoaDataGridViewTextBoxColumn";
-            this.nienkhoaDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // maGVDataGridViewTextBoxColumn
             // 
             this.maGVDataGridViewTextBoxColumn.DataPropertyName = "MaGV";
             this.maGVDataGridViewTextBoxColumn.HeaderText = "MaGV";
+            this.maGVDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.maGVDataGridViewTextBoxColumn.Name = "maGVDataGridViewTextBoxColumn";
-            this.maGVDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // lOPBindingSource
             // 
@@ -121,33 +118,25 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.panel1.Controls.Add(this.comboBox1);
             this.panel1.Controls.Add(this.button2);
             this.panel1.Controls.Add(this.button1);
+            this.panel1.Controls.Add(this.textBox1);
             this.panel1.Controls.Add(this.label1);
             this.panel1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.panel1.Location = new System.Drawing.Point(172, 49);
+            this.panel1.Location = new System.Drawing.Point(21, 4);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(784, 134);
+            this.panel1.Size = new System.Drawing.Size(1045, 165);
             this.panel1.TabIndex = 1;
-            // 
-            // comboBox1
-            // 
-            this.comboBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(160, 53);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(157, 24);
-            this.comboBox1.TabIndex = 14;
-            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
             // button2
             // 
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.button2.Location = new System.Drawing.Point(472, 50);
+            this.button2.Location = new System.Drawing.Point(629, 62);
+            this.button2.Margin = new System.Windows.Forms.Padding(4);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
+            this.button2.Size = new System.Drawing.Size(100, 28);
             this.button2.TabIndex = 13;
             this.button2.Text = "thoát";
             this.button2.UseVisualStyleBackColor = true;
@@ -157,24 +146,36 @@
             // 
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.button1.Location = new System.Drawing.Point(360, 50);
+            this.button1.Location = new System.Drawing.Point(480, 62);
+            this.button1.Margin = new System.Windows.Forms.Padding(4);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.Size = new System.Drawing.Size(100, 28);
             this.button1.TabIndex = 12;
             this.button1.Text = "tìm kiếm";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // textBox1
+            // 
+            this.textBox1.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox1.Location = new System.Drawing.Point(232, 62);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(4);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(201, 29);
+            this.textBox1.TabIndex = 2;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label1.Location = new System.Drawing.Point(104, 53);
+            this.label1.Location = new System.Drawing.Point(139, 65);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(50, 17);
+            this.label1.Size = new System.Drawing.Size(63, 21);
             this.label1.TabIndex = 0;
             this.label1.Text = "Mã lớp";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // lOPTableAdapter
             // 
@@ -182,14 +183,15 @@
             // 
             // Thongtinlophoc
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.dataGridView1);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Thongtinlophoc";
-            this.Size = new System.Drawing.Size(1160, 575);
+            this.Size = new System.Drawing.Size(1089, 455);
             this.Load += new System.EventHandler(this.Thongtinlophoc_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.lOPBindingSource)).EndInit();
@@ -205,6 +207,7 @@
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.DataGridViewTextBoxColumn maLopDataGridViewTextBoxColumn;
@@ -215,6 +218,5 @@
         private System.Windows.Forms.BindingSource lOPBindingSource;
         private SchoolEdu_DatabaseDataSet3 schoolEdu_DatabaseDataSet3;
         private SchoolEdu_DatabaseDataSet3TableAdapters.LOPTableAdapter lOPTableAdapter;
-        private System.Windows.Forms.ComboBox comboBox1;
     }
 }
