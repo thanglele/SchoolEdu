@@ -147,44 +147,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Account.cs" />
-    <Compile Include="BLL\Bll_Lop.cs" />
-    <Compile Include="BLL\Bll_SinhVien.cs" />
-    <Compile Include="DAL\Dal_Lop.cs" />
-    <Compile Include="DAL\Dal_SinhVien.cs" />
-    <Compile Include="DAL\KetNoi.cs" />
     <Compile Include="dangkyhoc.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="dangkyhoc.Designer.cs">
       <DependentUpon>dangkyhoc.cs</DependentUpon>
-    </Compile>
-    <Compile Include="GUI\frm_ChiTiet.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="GUI\frm_ChiTiet.Designer.cs">
-      <DependentUpon>frm_ChiTiet.cs</DependentUpon>
-    </Compile>
-    <Compile Include="GUI\frm_DangNhap.cs" />
-    <Compile Include="GUI\frm_GiaoDien.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="GUI\frm_GiaoDien.Designer.cs">
-      <DependentUpon>frm_GiaoDien.cs</DependentUpon>
-    </Compile>
-    <Compile Include="GUI\frm_Lop.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="GUI\frm_Lop.designer.cs">
-      <DependentUpon>frm_Lop.cs</DependentUpon>
-    </Compile>
-    <Compile Include="GUI\frm_SinhVien.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="GUI\frm_SinhVien.designer.cs">
-      <DependentUpon>frm_SinhVien.cs</DependentUpon>
-    </Compile>
-    <Compile Include="GUI\frm_TaiKhoan.cs">
-      <SubType>Form</SubType>
     </Compile>
     <Compile Include="Login_Form.cs">
       <SubType>Form</SubType>
@@ -268,18 +235,6 @@
     </Compile>
     <EmbeddedResource Include="dangkyhoc.resx">
       <DependentUpon>dangkyhoc.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="GUI\frm_ChiTiet.resx">
-      <DependentUpon>frm_ChiTiet.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="GUI\frm_GiaoDien.resx">
-      <DependentUpon>frm_GiaoDien.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="GUI\frm_Lop.resx">
-      <DependentUpon>frm_Lop.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="GUI\frm_SinhVien.resx">
-      <DependentUpon>frm_SinhVien.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Login_Form.resx">
       <DependentUpon>Login_Form.cs</DependentUpon>
