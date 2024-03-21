@@ -147,21 +147,44 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Account.cs" />
+    <Compile Include="BLL\Bll_Lop.cs" />
+    <Compile Include="BLL\Bll_SinhVien.cs" />
+    <Compile Include="DAL\Dal_Lop.cs" />
+    <Compile Include="DAL\Dal_SinhVien.cs" />
+    <Compile Include="DAL\KetNoi.cs" />
     <Compile Include="dangkyhoc.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="dangkyhoc.Designer.cs">
       <DependentUpon>dangkyhoc.cs</DependentUpon>
     </Compile>
-    <Compile Include="DataSet1.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>DataSet1.xsd</DependentUpon>
+    <Compile Include="GUI\frm_ChiTiet.cs">
+      <SubType>Form</SubType>
     </Compile>
-    <Compile Include="DataSet2.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>DataSet2.xsd</DependentUpon>
+    <Compile Include="GUI\frm_ChiTiet.Designer.cs">
+      <DependentUpon>frm_ChiTiet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\frm_DangNhap.cs" />
+    <Compile Include="GUI\frm_GiaoDien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\frm_GiaoDien.Designer.cs">
+      <DependentUpon>frm_GiaoDien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\frm_Lop.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\frm_Lop.designer.cs">
+      <DependentUpon>frm_Lop.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\frm_SinhVien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\frm_SinhVien.designer.cs">
+      <DependentUpon>frm_SinhVien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\frm_TaiKhoan.cs">
+      <SubType>Form</SubType>
     </Compile>
     <Compile Include="Login_Form.cs">
       <SubType>Form</SubType>
@@ -189,12 +212,6 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="QLSV.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="QLSV.Designer.cs">
-      <DependentUpon>QLSV.cs</DependentUpon>
-    </Compile>
     <Compile Include="SchoolEdu_DatabaseDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -215,6 +232,16 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>SchoolEdu_DatabaseDataSet3.xsd</DependentUpon>
     </Compile>
+    <Compile Include="SchoolEdu_DatabaseDataSet4.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SchoolEdu_DatabaseDataSet4.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="SchoolEdu_DatabaseDataSet5.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SchoolEdu_DatabaseDataSet5.xsd</DependentUpon>
+    </Compile>
     <Compile Include="sinhvien.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -233,8 +260,26 @@
     <Compile Include="Thongtinsinhvien.Designer.cs">
       <DependentUpon>Thongtinsinhvien.cs</DependentUpon>
     </Compile>
+    <Compile Include="tonggpa.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="tonggpa.Designer.cs">
+      <DependentUpon>tonggpa.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="dangkyhoc.resx">
       <DependentUpon>dangkyhoc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\frm_ChiTiet.resx">
+      <DependentUpon>frm_ChiTiet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\frm_GiaoDien.resx">
+      <DependentUpon>frm_GiaoDien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\frm_Lop.resx">
+      <DependentUpon>frm_Lop.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\frm_SinhVien.resx">
+      <DependentUpon>frm_SinhVien.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Login_Form.resx">
       <DependentUpon>Login_Form.cs</DependentUpon>
@@ -250,11 +295,14 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
     </EmbeddedResource>
-    <EmbeddedResource Include="QLSV.resx">
-      <DependentUpon>QLSV.cs</DependentUpon>
-    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
     <EmbeddedResource Include="sinhvien.resx">
       <DependentUpon>sinhvien.cs</DependentUpon>
     </EmbeddedResource>
@@ -264,28 +312,9 @@
     <EmbeddedResource Include="Thongtinsinhvien.resx">
       <DependentUpon>Thongtinsinhvien.cs</DependentUpon>
     </EmbeddedResource>
-    <None Include="DataSet1.xsc">
-      <DependentUpon>DataSet1.xsd</DependentUpon>
-    </None>
-    <None Include="DataSet1.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>DataSet1.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="DataSet1.xss">
-      <DependentUpon>DataSet1.xsd</DependentUpon>
-    </None>
-    <None Include="DataSet2.xsc">
-      <DependentUpon>DataSet2.xsd</DependentUpon>
-    </None>
-    <None Include="DataSet2.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>DataSet2.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="DataSet2.xss">
-      <DependentUpon>DataSet2.xsd</DependentUpon>
-    </None>
+    <EmbeddedResource Include="tonggpa.resx">
+      <DependentUpon>tonggpa.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -340,12 +369,56 @@
     <None Include="SchoolEdu_DatabaseDataSet3.xss">
       <DependentUpon>SchoolEdu_DatabaseDataSet3.xsd</DependentUpon>
     </None>
+    <None Include="SchoolEdu_DatabaseDataSet4.xsc">
+      <DependentUpon>SchoolEdu_DatabaseDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="SchoolEdu_DatabaseDataSet4.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SchoolEdu_DatabaseDataSet4.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="SchoolEdu_DatabaseDataSet4.xss">
+      <DependentUpon>SchoolEdu_DatabaseDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="SchoolEdu_DatabaseDataSet5.xsc">
+      <DependentUpon>SchoolEdu_DatabaseDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="SchoolEdu_DatabaseDataSet5.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SchoolEdu_DatabaseDataSet5.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="SchoolEdu_DatabaseDataSet5.xss">
+      <DependentUpon>SchoolEdu_DatabaseDataSet5.xsd</DependentUpon>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Resources\" />
+    <None Include="Resources\anhtlu.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo-thuyloi.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\13.jpeg" />
+    <Content Include="Resources\4210903.png" />
+    <Content Include="Resources\accounticon.png" />
+    <Content Include="Resources\icons8-add-40.png" />
+    <Content Include="Resources\icons8-add-80.png" />
+    <Content Include="Resources\icons8-delete-100.png" />
+    <Content Include="Resources\icons8-menu-48.png" />
+    <Content Include="Resources\icons8-pencil-drawing-96.png" />
+    <Content Include="Resources\icons8-power-64.png" />
+    <Content Include="Resources\icons8-save-96.png" />
+    <Content Include="Resources\icons8-search-96.png" />
+    <Content Include="Resources\Lop.png" />
+    <Content Include="Resources\passwordicon.png" />
+    <Content Include="Resources\SinhVien.png" />
+    <Content Include="Resources\user.png" />
+    <Content Include="Resources\usericon.png" />
+    <Content Include="Resources\Xem.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="..\packages\Microsoft.Data.SqlClient.SNI.4.0.1\build\net46\Microsoft.Data.SqlClient.SNI.targets" Condition="Exists('..\packages\Microsoft.Data.SqlClient.SNI.4.0.1\build\net46\Microsoft.Data.SqlClient.SNI.targets')" />
