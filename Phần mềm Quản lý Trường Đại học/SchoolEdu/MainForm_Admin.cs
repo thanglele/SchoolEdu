@@ -97,12 +97,18 @@ namespace SchoolEdu
         private void xoa_Click(object sender, EventArgs e)
         {
             /*
-            if (taikhoangiaovien.Equals("admin") || taikhoangiaovien.Equals("user"))
+             if (taikhoangiaovien.Equals("admin") || taikhoangiaovien.Equals("user"))
             {
-                txt_ txt_MaGV.Enabled = false;
-                txt_ txt_TenGV.Enabled = false;
-                txt_ txt_NgaySinh.Enabled = false;
-                txt_ txt_DiaChi.Enabled = false;
+                if (string.IsNullOrEmpty(txt_MaGV.Text))
+                {
+                    MessageBox.Show("Chưa Có Giáo Viên Cần Xóa");
+                }
+                else
+                {
+                    DialogResult thongbao;
+                    thongbao = MessageBox.Show("Bạn Có Muốn Xóa Giáo Viên Này ?", "Thông Báo", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+                    
+                }
             }
             else
             {
@@ -176,8 +182,11 @@ namespace SchoolEdu
             }
             */
         }
-            
-        
+
+        private void timkiem_Click(object sender, EventArgs e)
+        {
+
+        }
     }
         
 }

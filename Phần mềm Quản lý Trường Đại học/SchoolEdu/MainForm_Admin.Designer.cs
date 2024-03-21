@@ -40,6 +40,7 @@
             this.tabControl2 = new System.Windows.Forms.TabControl();
             this.quanlyhocvu = new System.Windows.Forms.TabPage();
             this.thongtingiaovien = new System.Windows.Forms.TabPage();
+            this.luu = new System.Windows.Forms.Button();
             this.xoa = new System.Windows.Forms.Button();
             this.sua = new System.Windows.Forms.Button();
             this.them = new System.Windows.Forms.Button();
@@ -70,7 +71,6 @@
             this.dataSet4BindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.gIAOVIENTableAdapter = new SchoolEdu.SchoolEdu_DatabaseDataSet4TableAdapters.GIAOVIENTableAdapter();
             this.gIAOVIENTableAdapter1 = new SchoolEdu.SchoolEdu_DatabaseDataSet5TableAdapters.GIAOVIENTableAdapter();
-            this.luu = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.tabControl1.SuspendLayout();
@@ -202,6 +202,16 @@
             this.thongtingiaovien.TabIndex = 1;
             this.thongtingiaovien.Text = "Thông tin giáo viên";
             this.thongtingiaovien.UseVisualStyleBackColor = true;
+            // 
+            // luu
+            // 
+            this.luu.Location = new System.Drawing.Point(579, 123);
+            this.luu.Name = "luu";
+            this.luu.Size = new System.Drawing.Size(75, 23);
+            this.luu.TabIndex = 14;
+            this.luu.Text = "Lưu";
+            this.luu.UseVisualStyleBackColor = true;
+            this.luu.Click += new System.EventHandler(this.luu_Click);
             // 
             // xoa
             // 
@@ -428,16 +438,6 @@
             // gIAOVIENTableAdapter1
             // 
             this.gIAOVIENTableAdapter1.ClearBeforeFill = true;
-            // 
-            // luu
-            // 
-            this.luu.Location = new System.Drawing.Point(579, 123);
-            this.luu.Name = "luu";
-            this.luu.Size = new System.Drawing.Size(75, 23);
-            this.luu.TabIndex = 14;
-            this.luu.Text = "Lưu";
-            this.luu.UseVisualStyleBackColor = true;
-            this.luu.Click += new System.EventHandler(this.luu_Click);
             // 
             // MainForm_Admin
             // 
