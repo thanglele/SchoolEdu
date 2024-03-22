@@ -30,16 +30,15 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm_Student));
             this.panel1 = new System.Windows.Forms.Panel();
-            this.logout = new System.Windows.Forms.Button();
             this.sinhvien1 = new SchoolEdu.sinhvien();
             this.thongtinsinhvien1 = new SchoolEdu.Thongtinsinhvien();
             this.thongtinlophoc1 = new SchoolEdu.Thongtinlophoc();
+            this.logout = new System.Windows.Forms.Button();
             this.sinhToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.đăngKýHọcToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.đăngKýHọcToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.tổngGpaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.đăngKýHọcToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.panel1.SuspendLayout();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -53,17 +52,6 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1160, 575);
             this.panel1.TabIndex = 2;
-            // 
-            // logout
-            // 
-            this.logout.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.logout.Location = new System.Drawing.Point(1054, 0);
-            this.logout.Name = "logout";
-            this.logout.Size = new System.Drawing.Size(130, 33);
-            this.logout.TabIndex = 3;
-            this.logout.Text = "Đăng xuất";
-            this.logout.UseVisualStyleBackColor = true;
-            this.logout.Click += new System.EventHandler(this.logout_click);
             // 
             // sinhvien1
             // 
@@ -95,6 +83,17 @@
             this.thongtinlophoc1.Size = new System.Drawing.Size(1160, 575);
             this.thongtinlophoc1.TabIndex = 2;
             // 
+            // logout
+            // 
+            this.logout.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.logout.Location = new System.Drawing.Point(1054, 0);
+            this.logout.Name = "logout";
+            this.logout.Size = new System.Drawing.Size(130, 33);
+            this.logout.TabIndex = 3;
+            this.logout.Text = "Đăng xuất";
+            this.logout.UseVisualStyleBackColor = true;
+            this.logout.Click += new System.EventHandler(this.logout_click);
+            // 
             // sinhToolStripMenuItem
             // 
             this.sinhToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -119,21 +118,6 @@
             this.đăngKýHọcToolStripMenuItem.Text = "Thông tin lớp học";
             this.đăngKýHọcToolStripMenuItem.Click += new System.EventHandler(this.ttlh_click);
             // 
-            // đăngKýHọcToolStripMenuItem1
-            // 
-            this.đăngKýHọcToolStripMenuItem1.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.đăngKýHọcToolStripMenuItem1.Name = "đăngKýHọcToolStripMenuItem1";
-            this.đăngKýHọcToolStripMenuItem1.Size = new System.Drawing.Size(128, 29);
-            this.đăngKýHọcToolStripMenuItem1.Text = "Đăng ký học";
-            this.đăngKýHọcToolStripMenuItem1.Click += new System.EventHandler(this.dky_click);
-            // 
-            // tổngGpaToolStripMenuItem
-            // 
-            this.tổngGpaToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tổngGpaToolStripMenuItem.Name = "tổngGpaToolStripMenuItem";
-            this.tổngGpaToolStripMenuItem.Size = new System.Drawing.Size(107, 29);
-            this.tổngGpaToolStripMenuItem.Text = "Tổng GPA";
-            // 
             // menuStrip1
             // 
             this.menuStrip1.BackColor = System.Drawing.Color.Silver;
@@ -142,13 +126,20 @@
             this.sinhToolStripMenuItem,
             this.toolStripMenuItem1,
             this.đăngKýHọcToolStripMenuItem,
-            this.đăngKýHọcToolStripMenuItem1,
-            this.tổngGpaToolStripMenuItem});
+            this.đăngKýHọcToolStripMenuItem1});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(1184, 33);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
+            // 
+            // đăngKýHọcToolStripMenuItem1
+            // 
+            this.đăngKýHọcToolStripMenuItem1.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.đăngKýHọcToolStripMenuItem1.Name = "đăngKýHọcToolStripMenuItem1";
+            this.đăngKýHọcToolStripMenuItem1.Size = new System.Drawing.Size(128, 29);
+            this.đăngKýHọcToolStripMenuItem1.Text = "Đăng ký học";
+            this.đăngKýHọcToolStripMenuItem1.Click += new System.EventHandler(this.dky_click);
             // 
             // MainForm_Student
             // 
@@ -182,8 +173,7 @@
         private System.Windows.Forms.ToolStripMenuItem sinhToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem đăngKýHọcToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem đăngKýHọcToolStripMenuItem1;
-        private System.Windows.Forms.ToolStripMenuItem tổngGpaToolStripMenuItem;
         private System.Windows.Forms.MenuStrip menuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem đăngKýHọcToolStripMenuItem1;
     }
 }
